@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layoutid"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/myqrclodeback">
+
+    <include
+        android:id="@+id/relativeLayout_id_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/my_qrcode_share_public_layout" />
+
+
+</RelativeLayout>

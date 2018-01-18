@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:orientation="vertical">
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/store_detail_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/store_detail_banner_height"
+        android:background="@color/wh"
+        app:banner_pageChangeDuration="800"
+        app:banner_pointAutoPlayAble="true"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+        app:banner_transitionEffect="alpha" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wh"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/store_detail_store_describe_p"
+        android:paddingRight="@dimen/store_detail_store_describe_p"
+        android:paddingTop="@dimen/store_detail_store_describe_pt">
+
+        <TextView
+            android:id="@+id/store_detail_store_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/wh"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="广东酒家【体育东路店】第一百零一分店 空间站蓄电池科技健康"
+            android:textColor="#333333"
+            android:textSize="@dimen/store_detail_store_describe_size" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/wh"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/wh"
+                    android:text="评分："
+                    android:textColor="#333333"
+                    android:textSize="@dimen/store_detail_store_per_capita_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/store_detail_store_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/wh"
+                    android:text="8.0"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/store_detail_store_per_capita_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/store_detail_store_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/wh"
+                    android:text="生活服务"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/store_detail_store_per_capita_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="¥ "
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/store_detail_store_per_capita_size" />
+
+                <TextView
+                    android:id="@+id/store_detail_store_per_capita"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"
+                    android:textColor="#ff0000"
+                    android:textSize="@dimen/store_detail_store_per_capita_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/wh"
+                    android:text="/ 人"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/store_detail_store_per_capita_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/store_detail_store_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:drawableLeft="@drawable/winguo_store_detail_location"
+                android:drawablePadding="5dp"
+                android:text="2km"
+                android:textColor="#24a1fe"
+                android:textSize="@dimen/store_detail_store_distance_size" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/wh"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <FrameLayout
+            android:id="@+id/store_detail_store_address_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/wh"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/store_detail_store_address"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/wh"
+                android:drawableLeft="@drawable/winguo_store_detail_location"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingTop="10dp"
+                android:text="广东酒家【体育东路店】第一百零一分店"
+                android:textColor="#333333"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/winguo_store_detail_to_right" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:src="@drawable/winguo_store_detail_line" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/wh"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/wh"
+                    android:drawableLeft="@drawable/winguo_store_detail_time"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="营业时间："
+                    android:textColor="#333333"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/store_detail_store_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/wh"
+                    android:drawablePadding="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="09:20 - 20：30"
+                    android:textColor="#333333"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:src="@drawable/winguo_store_detail_line" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/store_detail_store_tel_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/wh"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/store_detail_store_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/wh"
+                android:drawableLeft="@drawable/winguo_store_detail_tel"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:paddingTop="10dp"
+                android:text="020-3887-1888"
+                android:textColor="#333333"
+                android:textSize="11sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/winguo_store_detail_to_right" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/wh"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/wh"
+            android:drawableLeft="@drawable/nearby_store_home_title_left_ic"
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:text="商家实景"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/store_detail_live_action_rv"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/store_detail_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/winguo_store_shop_detail_bt_speak" />
+
+</LinearLayout>

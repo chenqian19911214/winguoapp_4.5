@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_pw_ll_ml"
+        android:layout_marginRight="@dimen/login_pw_ll_ml">
+
+        <EditText
+            android:id="@+id/modify_loginpwd_byold_oldet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入旧密码"
+            android:padding="20dp"
+            android:password="true"
+            android:background="@null"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:theme="@style/MyEditText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/modify_loginpwd_byold_oldet"
+            android:background="@color/white1" />
+        <!--android:button="@drawable/toggle_btn"-->
+        <!--android:layout_marginRight="@dimen/hybrid4_account_login_showpwd_cb_mr"-->
+        <ToggleButton
+            android:id="@+id/modify_loginpwd_byold_oldtb"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toggle_btn"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_pw_ll_ml"
+        android:layout_marginRight="@dimen/login_pw_ll_ml">
+
+        <EditText
+            android:id="@+id/modify_loginpwd_byold_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="设置新密码"
+            android:padding="20dp"
+            android:password="true"
+            android:background="@null"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:theme="@style/MyEditText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/modify_loginpwd_byold_et"
+            android:background="@color/white1" />
+        <!--android:button="@drawable/toggle_btn"-->
+        <!--android:layout_marginRight="@dimen/hybrid4_account_login_showpwd_cb_mr"-->
+        <ToggleButton
+            android:id="@+id/modify_loginpwd_byold_tb"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toggle_btn"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_pw_ll_ml"
+        android:layout_marginRight="@dimen/login_pw_ll_ml">
+
+        <EditText
+            android:id="@+id/modify_loginpwd_byold_et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="再次确认新密码"
+            android:padding="20dp"
+            android:password="true"
+            android:background="@null"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:theme="@style/MyEditText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/modify_loginpwd_byold_et2"
+            android:background="@color/white1" />
+        <!--android:button="@drawable/toggle_btn"-->
+        <!--android:layout_marginRight="@dimen/hybrid4_account_login_showpwd_cb_mr"-->
+        <ToggleButton
+            android:id="@+id/modify_loginpwd_byold_tb2"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toggle_btn"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn="" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/modify_loginpwd_byold_submit"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/login_pw_ll_ml"
+        android:layout_marginRight="@dimen/login_pw_ll_ml"
+        android:layout_height="@dimen/winguo_account_modify_pay_bt_h"
+        android:layout_marginTop="@dimen/winguo_account_modify_pay_bt_mt"
+        android:background="@drawable/pay_success_blue_solid_btn"
+        android:text="@string/winguo_account_reset_pay_pwd"
+        android:textColor="@android:color/white" />
+    <TextView
+        android:id="@+id/modify_loginpwd_byold_forgetpwd_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/hybrid4_account_forgetpwd_tv_mr"
+        android:layout_marginRight="@dimen/login_pw_ll_ml"
+        android:text="@string/hybrid4_account_forget_password"
+        android:textSize="16sp" />
+
+</LinearLayout>

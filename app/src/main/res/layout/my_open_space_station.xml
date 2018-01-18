@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/white1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/open_space_station_nav_h"
+        android:background="@color/wh" >
+
+        <RelativeLayout
+            android:id="@+id/my_open_space_station_back"
+            android:layout_width="@dimen/open_space_station_back_w"
+            android:layout_height="@dimen/open_space_station_back_h"
+            android:layout_marginLeft="@dimen/open_space_station_back_ml"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="@dimen/open_space_station_back_iv_w"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/open_space_station_back_iv_ml"
+                android:layout_marginTop="@dimen/open_space_station_back_iv_mt"
+                android:src="@drawable/back2" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/hybrid4_account_login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/my_space_station"
+            android:textColor="@color/product_title_text_color"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_open_space_text"
+        android:layout_marginLeft="@dimen/open_space_expalin_ml"
+        android:layout_marginTop="@dimen/open_space_expalin_mt"
+        android:layout_marginBottom="@dimen/open_space_expalin_mb"
+        android:textColor="#050505"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/open_space_edit_ll_h"
+        android:orientation="horizontal"
+        android:background="@color/wh"
+        android:layout_marginLeft="@dimen/open_space_edit_ll_ml"
+        android:layout_marginRight="@dimen/open_space_edit_ll_mr"
+        android:gravity="center_vertical">
+        <EditText
+            android:id="@+id/space_station_name"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:hint="@string/my_open_space_hint"
+            android:textSize="14sp"
+            android:maxLength="8"
+            android:background="@null"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColor="#B9B9B9"
+            android:padding="@dimen/open_space_edit_pad"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:src="@drawable/space_station_name_division"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_open_space_tip"
+            android:layout_marginRight="@dimen/open_space_text_mr"
+            android:textColor="#B9B9B9"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_open_space_text2"
+        android:layout_marginLeft="@dimen/open_space_expalin2_ml"
+        android:layout_marginTop="@dimen/open_space_expalin2_mt"
+        android:textColor="#B2B2B2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_open_space_text3"
+        android:layout_marginLeft="@dimen/open_space_expalin3_ml"
+        android:layout_marginTop="@dimen/open_space_expalin3_mt"
+        android:textColor="#B2B2B2"/>
+
+    <Button
+        android:id="@+id/open_space_station_bt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/open_space_submit_h"
+        android:text="@string/open_space_station_true"
+        android:enabled="false"
+        android:layout_marginTop="@dimen/open_space_submit_mt"
+        android:layout_marginLeft="@dimen/open_space_submit_ml"
+        android:layout_marginRight="@dimen/open_space_submit_mr"
+        android:background="@drawable/space_station_name_null"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        />
+
+</LinearLayout>

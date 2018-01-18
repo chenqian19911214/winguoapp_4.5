@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wh">
+
+    <TextView
+        android:id="@+id/bank_card_detail_remove"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_camera_h"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="#e60012"
+        android:clickable="true"
+        android:layout_margin="5dp"
+        android:text="@string/bank_card_detail_remove"/>
+
+</LinearLayout>

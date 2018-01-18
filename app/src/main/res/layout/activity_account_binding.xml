@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/top_back_navi"/>
+
+    <FrameLayout
+        android:id="@+id/account_bind_weixin_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_split_line_h"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/user_head_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ssdk_oks_classic_wechat"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/set_center_weixin_bind_tip"
+            android:textSize="@dimen/person_item_textsize" />
+
+        <TextView
+            android:id="@+id/account_bind_weixin_bind_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/account_safe_right_drawablepadding"
+            android:drawableRight="@drawable/classify_arrows_right"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:textSize="@dimen/person_item_textsize"
+            android:text="立即绑定"/>
+
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/division_line"/>
+
+</LinearLayout>

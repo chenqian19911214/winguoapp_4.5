@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_cash">
+        <TextView
+            android:id="@+id/voucher_dialog_title_id"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/account_and_safe"
+            android:textColor="@color/dialog2_positive_text_color"
+            android:layout_marginTop="@dimen/about_my_label"/>
+        <TextView
+            android:id="@+id/voucher_dialog_text_id"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/voucher_dialog_text_color"
+            android:textSize="@dimen/search_type_pop_shop_mt"
+            android:layout_marginTop="@dimen/about_my_label"/>
+    </RelativeLayout>
+
+
+<ImageView
+    android:id="@+id/voucher_dialog_cancel_id"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:padding="@dimen/about_my_label"
+    android:src="@drawable/guanbi"/>
+</LinearLayout>

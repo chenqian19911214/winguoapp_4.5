@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_more_pop_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:background="@drawable/winguo_home_top_more_bg2"
+    android:orientation="vertical"
+    android:padding="@dimen/main_more_p">
+
+    <LinearLayout
+        android:id="@+id/main_shared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/main_more_item_p">
+
+        <ImageView
+            android:layout_width="@dimen/main_more_item_iv_w"
+            android:layout_height="@dimen/main_more_item_iv_w"
+            android:layout_marginRight="@dimen/main_more_item_iv_mr"
+            android:src="@drawable/winguo_home_top_more_share" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_more_item_tv_ml"
+            android:text="@string/main_shared"
+            android:textSize="@dimen/main_more_item_tv_size"/>
+    </LinearLayout>
+
+    <ImageView style="@style/horizontal_divider" />
+
+    <LinearLayout
+        android:id="@+id/main_more_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/main_more_item_p">
+
+        <ImageView
+            android:layout_width="@dimen/main_more_item_iv_w"
+            android:layout_height="@dimen/main_more_item_iv_w"
+            android:layout_marginRight="@dimen/main_more_item_iv_mr"
+            android:src="@drawable/winguo_home_top_more_qr" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_more_item_tv_ml"
+            android:text="@string/main_more_qr"
+            android:textSize="@dimen/main_more_item_tv_size"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,208 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="popAnim" parent="android:Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/search_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/search_exit</item>
+    </style>
+
+    <style name="horizontal_divider">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/divider</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="my_person_text_list">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+    <!--GridView item样式-->
+    <style name="grid_view">
+        <item name="android:background">@drawable/gride_view_selector</item>
+    </style>
+
+    <style name="my_person_text_hori">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_fade_out</item>
+    </style>
+
+    <style name="shopAnimationPop">
+        <item name="android:windowEnterAnimation">@anim/shop_pop_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/shop_pop_fade_out</item>
+    </style>
+
+    <!--自定义ImageView 属性参数-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="border_overlay" format="boolean"/>
+    </declare-styleable>
+    <!-- 为PopupWindow加入动画效果 -->
+    <style name="myPopupWindpw_anim_style">
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+    <style name="AnimationTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:activityOpenEnterAnimation">@anim/hybrid4_tutorials_slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/hybrid4_tutorials_slide_in_right</item>
+        <item name="android:activityCloseEnterAnimation">@anim/hybrid4_tutorials_slide_out_right
+        </item>
+        <item name="android:activityCloseExitAnimation">@anim/hybrid4_tutorials_slide_out_left
+        </item>
+    </style>
+
+    <style name="myDialog" parent="Theme.AppCompat.Dialog">-->
+        <!--是否悬浮在Activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <!--背景颜色及透明度-->
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="WaveProgressViewDefault">
+        <item name="radius">55dp</item>
+        <item name="progress_text_color">#fff</item>
+        <item name="progress_text_size">20sp</item>
+        <item name="progress_color">#C215AB30</item>
+        <item name="radius_color">#FF734B58</item>
+        <item name="progress">0</item>
+        <item name="maxProgress">100</item>
+    </style>
+
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--顶部栏属性-->
+    <style name="top_property">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/main_top_navi_h</item>
+        <item name="android:clipToPadding">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white1</item>
+        <item name="colorControlActivated">@color/title_color</item>
+    </style>
+
+    <style
+        name="no_border_dialog"
+        parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>  <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item><!-- 背景图片 -->
+        <item name="android:backgroundDimEnabled">false</item><!--背景是否需要模糊-->
+    </style>
+    <style name="table_bar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="back_btn">
+        <item name="android:layout_width">@dimen/back_width</item>
+        <item name="android:layout_height">@dimen/back_hight</item>
+    </style>
+
+    <!--弹出popupwindow时的动画-->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <!--我的订单_指示器-->
+    <declare-styleable name="TabPagerIndicator">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
+    </declare-styleable>
+
+    <!--首页头部gradationscroll-->
+    <style name="MaterialIndicator.Demo">
+        <item name="mi_indicatorColor">?android:attr/colorAccent</item>
+        <item name="mi_indicatorPadding">32dp</item>
+        <item name="mi_indicatorRadius">4dp</item>
+    </style>
+
+    <style name="MaterialIndicator">
+        <item name="mi_indicatorRadius">4dp</item>
+        <item name="mi_indicatorColor">#ff009688</item>
+    </style>
+    <!--首页头部gradationscroll-->
+
+    <dimen name="back_padding">5dp</dimen>
+
+    <style name="LetterIndexTextViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">36dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+</resources>

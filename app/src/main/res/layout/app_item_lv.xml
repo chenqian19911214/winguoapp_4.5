@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_item_h"
+        android:layout_marginRight="@dimen/app_item_mr"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+
+            android:layout_width="@dimen/search_contact_icon_w"
+            android:layout_height="@dimen/search_contact_icon_h"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/contact_item_ml"
+            android:layout_marginRight="@dimen/contact_item_mr">
+
+
+            <ImageView
+                android:id="@+id/app_item_ic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:id="@+id/app_item_fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/app_item_fl_pl"
+            android:paddingRight="@dimen/app_item_fl_pr">
+
+            <TextView
+                android:id="@+id/app_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="name"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/pay_modify_title_size" />
+
+            <ImageView
+                android:layout_width="@dimen/search_contact_message_icon_w"
+                android:layout_height="@dimen/search_contact_message_icon_w"
+                android:layout_gravity="right|center_vertical"
+                android:visibility="gone"
+                android:src="@drawable/openapp" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="help_tile_call">打电话</string>
+    <string name="help_tile_sms">发短信</string>
+    <string name="help_tile_share">分享</string>
+    <string name="help_tile_mic">语音直达</string>
+    <string name="help_tile_eat">美食周边</string>
+    
+
+    <string name="help_i_know">知道了，我也来试试</string>
+    
+</resources>

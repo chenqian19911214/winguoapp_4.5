@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/table_bar"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:padding="@dimen/home_drawable_top">
+
+        <FrameLayout
+            android:id="@+id/cart_back_btn"
+            android:layout_width="@dimen/back_container_width"
+            android:layout_height="match_parent">
+
+            <ImageView
+                style="@style/back_btn"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/back2" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/edit_search_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/classify_search_icon" />
+
+            <EditText
+                android:id="@+id/classify_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/classify_search_tv"
+                android:textColorHint="#b3b3b3"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/classify_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingBottom="8dp"
+              tools:ignore="RtlHardcoded">
+
+    <TextView
+        style="@style/LetterIndexTextViewStyle"
+        android:text="@string/located_city"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+    >
+        <TextView
+            android:id="@+id/tv_located_city"
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="8"
+            android:ellipsize="end"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_locate"
+            android:drawablePadding="5dp"
+            android:text="@string/locating"
+            android:textColor="@color/gray_deep"
+            android:textSize="16sp"
+        />
+        <ImageView
+            android:id="@+id/lbs_again_iv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="15dp"
+            android:src="@drawable/refresh_lbs"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_classify_name_item"
+        android:layout_width="@dimen/text_view_location_width"
+        android:layout_height="@dimen/text_view_location_hight"
+        android:background="@drawable/edit_text_bg"
+        android:gravity="center"
+        android:lines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:text=""
+        android:textColor="@color/product_screen_title_text_color"
+        android:textSize="@dimen/product_screen_price_size" />
+
+</LinearLayout>

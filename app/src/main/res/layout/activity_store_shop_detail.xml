@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/store_shop_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/store_shop_detail_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:id="@+id/store_shop_detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/wh"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <!--头布局-->
+            <include layout="@layout/store_shop_detail_top" />
+            <!--商品详情-->
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tr">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/wh">
+
+            <ImageView
+                android:id="@+id/store_shop_detail_bt_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="72dp"
+                android:src="@drawable/winguo_store_shop_detail_bt_tel" />
+
+            <ImageView
+                android:id="@+id/store_shop_detail_bt_panic_buying"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="72dp"
+                android:src="@drawable/winguo_store_shop_detail_bt_panic_buying" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/store_shop_detail_bt_speak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/winguo_store_shop_detail_bt_speak" />
+    </RelativeLayout>
+
+</RelativeLayout>

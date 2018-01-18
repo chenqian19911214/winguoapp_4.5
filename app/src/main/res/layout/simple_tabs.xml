@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/hybrid4_account_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <RelativeLayout
+            android:id="@+id/hybrid4_account_register_back2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:clickable="true">
+
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="@dimen/hybrid4_account_login_back_iv_w"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/hybrid4_account_login_back_iv_ml"
+                android:layout_marginTop="@dimen/hybrid4_account_login_back_iv_mt"
+                android:src="@drawable/winguo_app_login_back"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/hybrid4_account_register_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/hybrid4_account_all_order"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/title"/>
+
+    </RelativeLayout>
+    <com.winguo.mine.order.viewpager.TabPageIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

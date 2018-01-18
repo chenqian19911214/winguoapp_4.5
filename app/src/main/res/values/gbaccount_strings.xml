@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="gb_account_help_msg_login_account">登录账号不能为空，请输入6个以上、20个以内的字符作为帐号，字符可以是半角英文字母或数字</string>
+    <string name="gb_account_help_msg_reg_account">请输入有效的手机号码作为注册帐号名，已经注册或绑定的手机号码不能重复注册</string>
+    <string name="gb_account_help_msg_pwd">密码不能为空，请输入6个以上、20个以内的字符作为密码，不能单独使用数字、字母或符号</string>
+  	<string name="gb_account_help_msg_vcode">点击发送验证码，1分钟内未收到可以重发，此项服务完全免费</string>
+    <string name="gb_account_help_msg_resetpwd_account">请输入账户名，如果您使用手机号码注册或登录，则账户名就是手机号码</string>
+  	<string name="gb_account_help_msg_resetpwd_phonenum">请输入手机号码，用于接收验证码短信，如果您使用手机号码注册或登录，则接收验证码的手机号码必须和注册的手机号码相同</string>
+  
+    
+    <string name="gb_account_help_msg_reg_agree_head">协议内容及签署\n
+1.本协议内容包括协议正文及所有问果已经发布的或将来可能发布的协议；所有协议为本协议不可分割的组成部分，都具有同等法律效力。\n
+2.请您在使用问果服务之前认真阅读全部协议内容，如您对协议有疑问，应向问果咨询。但无论您是否在使用问果服务之前阅读了本协议内容，只要您使用问果的服务，则本协议立即对您产生约束，届时您不应以未阅读本协议的内容等理由，主张本协议无效，或要求撤销本协议的约束。\n
+3.使用问果服务，即当您承诺接受并遵守本协议的约定；如果您对本协议的约定有异议，您应立即停止注册程序或停止使用问果的所有服务。\n</string>
+        
+    
+    <string name="gb_account_help_msg_reg_agree_1">1.注册者资格\n　　您确认，在您完成注册程序或以其他问果允许的方式实际使用问果服务时，您应当是具备完全民事行为能力的自然人，或依法成立、存续的法人或其他组织。如您不具备上述主体资格，本站可随时、全权决定拒绝向您提供服务，若因此给"问果"或第三方造成损失，您应当承担全部赔偿责任。如果您在18周岁以下，您只能在父母或监护人的监护参与下才能使用本站。</string>
+
+	<string name="gb_account_help_msg_reg_agree_2">2.账户\n　　在您签署本协议，完成会员注册程序时，问果会向您提供唯一编号的账户。您可以对账户设置会员名和密码，通过该会员名密码或与该会员名密码关联的其它用户名密码登录问果。如您连续两年未使用您的会员名和密码登录问果，或您的会员名涉嫌侵犯他人合法权益，问果有权终止向您提供本站服务，注销您的账户，问果对此产生的后果不承担任何责任。</string>
+        
+    <string name="gb_account_help_msg_reg_agree_3">3.账户安全\n　　请牢记您的帐号密码，切勿透露给任何第三方。如果发现任何人不当使用您的账户，或有任何其他可能危及您的账户安全时，您应当立即以有效方式通知问果，要求问果暂停账户服务，因会员泄露自身帐户资料，导致的自身权利损失由会员自行承担，本站不承担任何责任。</string>
+    
+    <string name="gb_account_help_msg_reg_agree_4">4.会员\n　　注册会员须根据注册提示内容填写真实、详尽、准确的注册信息，如注册信息有变动，请及时修改及更新。如会员提供的注册信息存在不合法、不准确等情况，本站保留终止该会员使用本站网络服务资格的权利。</string>
+    
+    <string name="gb_account_help_msg_reg_agree_5">5.会员通知服务\n　　注册后成为会员后，将视为同意接受本站的订购通知服务，并且问果将不定时的向您的邮箱和通讯设备等方式发送通知服务信息。</string>
+        
+    <string name="gb_account_help_msg_reg_agree_6">6.费用\n　　注册成为问果会员完全免费。您在使用问果服务过程中，所产生的应纳税费，以及一切硬件、软件、服务及其它方面的费用，均由您自行承担。</string>
+    
+    <string name="gb_account_help_msg_reg_agree_7">7.协议的修正和执行性\n　　问果有权根据需要不时地制订和修改本协议，并以网站公示的方式进行公告，问果不再单独通知您；变更后的协议一经在网站公布，则立即生效；如您不同意相关变更，应当立即停止使用本站服务。如果出于任何原因，这些条款及其条件的部分不能得以执行，其他条款及其条件的有效性将不受影响。</string>
+    
+    <string name="gb_account_help_msg_reg_agree_8">8.法律适用与管辖\n　　本协议之效力、解释、变更、执行与争议解决均适用中华人民共和国法律，如无相关法律规定的，则应参照通用国际商业惯例和（或）行业惯例。与本协议有关的任何争议，协议各方不能通过协商解决的，任何一方均可向广东国笔科技股份有限公司所在地有管辖权的人民法院提起诉讼。</string>
+    
+    <string name="gb_account_err_code_prefix">错误码:</string>
+    <string name="gb_account_err_msg_unknown">未知的错误，请联系客服，谢谢！</string>
+    
+    <string name="gb_account_err_msg_need_login">您还没有登录！请先登录</string>
+    <string name="gb_account_err_msg_invalid_key">无效的加密信息</string>
+    <string name="gb_account_err_msg_hash_failed">HASH创建失败</string>
+    <string name="gb_account_err_msg_network_failed">网络状况不佳，请稍候再试</string>
+    <string name="gb_account_err_msg_invalid_input">输入不能为空</string>
+    <string name="gb_account_err_msg_invalid_peer_data">服务端返回数据无效，可能是网络状况不佳，请稍候再试</string>
+    <string name="gb_account_err_msg_no_usr">用户不存在</string>
+    <string name="gb_account_err_msg_session_expires">会话已经过期，请重新登录</string>
+    <string name="gb_account_err_msg_task_canceled">操作被取消</string>
+    <string name="gb_account_err_msg_create_session_failed">创建会话失败</string>
+    <string name="gb_account_err_msg_network_connetion_failed">无法访问网络，请检查网络连接</string>
+    <string name="gb_account_err_request_timeout">网络请求超时！</string>
+
+    
+    <string name="gb_account_err_msg_wg_reg_no_1">登录账号不能为空</string>
+    <string name="gb_account_err_msg_wg_reg_no_2">登录的账号为半角英文数字、6个字符以上、20个字符以内</string>
+    <string name="gb_account_err_msg_wg_reg_no_3">登录账号已存在</string>
+    <string name="gb_account_err_msg_wg_reg_no_4">手机号码已存在或格式不正确</string>
+    <string name="gb_account_err_msg_wg_reg_no_5">抱歉！密码不允许空格或其他制表符！</string>
+    <string name="gb_account_err_msg_wg_reg_no_6">加密随机数st参数不能为空</string>
+    <string name="gb_account_err_msg_wg_reg_no_7">抱歉，您的验证码错误或已过期</string>
+    <string name="gb_account_err_msg_wg_reg_no_8">注册失败，请联系技术支持</string>
+    <string name="gb_account_err_msg_wg_reg_no_41">手机号码不能为空</string>
+    <string name="gb_account_err_msg_wg_reg_no_42">手机号码格式不正确</string>
+    <string name="gb_account_err_msg_wg_reg_no_43">手机号码已存在</string>
+    <string name="gb_account_err_msg_wg_reg_no_44">您的手机号码已经注册，请登录后进行手机验证</string>
+      
+    <string name="gb_account_err_msg_wg_login_no_1">登录用户或密码不能为空</string>
+    <string name="gb_account_err_msg_wg_login_no_2">登录密码输入错误超过6次，请2小时后再试</string>
+    <string name="gb_account_err_msg_wg_login_no_3">用户名或密码错误</string>
+  	  
+    <string name="gb_account_err_msg_wg_logout_no_1">登出失败，请联系客服，谢谢！</string>
+    
+    <string name="gb_account_err_msg_wg_sendvercode_no_1">请输入正确的手机号码！</string>
+   	<string name="gb_account_err_msg_wg_sendvercode_no_2">今天内此手机发送验证码的次数已用完</string>
+    <string name="gb_account_err_msg_wg_sendvercode_no_3">短信发送失败，请稍后再试！</string>
+ 	<string name="gb_account_err_msg_wg_sendvercode_no_4">短信已发送过，1分钟后没有收到短信再重新获取！</string>
+ 	
+    
+    <string name="gb_account_err_msg_wg_regverify_no_1">请输入正确的手机号码！</string>
+   	<string name="gb_account_err_msg_wg_regverify_no_2">抱歉！您的验证码错误或已过期！</string>
+ 
+   	<string name="gb_account_err_msg_wg_bind_no_1">您还没有登录！请先登录</string>
+   	<string name="gb_account_err_msg_wg_bind_no_2">请输入正确的手机号码！</string>
+   	<string name="gb_account_err_msg_wg_bind_no_3">抱歉！您的验证码错误或已过期！</string>
+ 
+   	
+   	<string name="gb_account_err_msg_wg_resetpwd_no_1">请输入正确的手机号码</string>
+   	<string name="gb_account_err_msg_wg_resetpwd_no_2">抱歉！密码不能全部为数字或字母！</string>
+   	<string name="gb_account_err_msg_wg_resetpwd_no_3">抱歉！您的验证码错误或已过期！</string>
+ 	<string name="gb_account_err_msg_wg_resetpwd_no_4">抱歉！密码修改失败！请联系客服，谢谢！</string>
+   	<string name="gb_account_err_msg_wg_resetpwd_no_5">抱歉！新密码不能与旧密码相同！</string>
+ 	
+ 	<string name="gb_account_err_msg_wg_modpwd_no_1">密码修改失败,请联系客服，谢谢！</string>
+   	<string name="gb_account_err_msg_wg_modpwd_no_2">原密码输入错误或者原密码为空</string>
+   	<string name="gb_account_err_msg_wg_modpwd_no_3">新密码不能为空或者新密码格式不正确</string>
+ 	<string name="gb_account_err_msg_wg_modpwd_no_4">由于原密码连续输入错误次数超过六次，请两小时后再进行此项操作</string>
+ 
+ 	<string name="gb_account_err_msg_wg_setbankcard_no_1">请选择银行</string>
+   	<string name="gb_account_err_msg_wg_setbankcard_no_2">请输入开户人名称</string>
+   	<string name="gb_account_err_msg_wg_setbankcard_no_3">请输入银行卡卡号</string>
+ 	<string name="gb_account_err_msg_wg_setbankcard_no_4">银行卡卡号格式不正确</string>
+ 	<string name="gb_account_err_msg_wg_setbankcard_no_5">操作失败，请联系客服，谢谢！</string>
+ 
+ 	<!-- 查找省市支行错误信息，暂时还未有具体错误编号 -->
+ 	<string name="gb_account_err_msg_wg_getprovince_no_1">操作失败，请联系客服，谢谢！</string>
+ 	<string name="gb_account_err_msg_wg_getprovince_no_2">操作失败，请联系客服，谢谢！</string>
+ 	<string name="gb_account_err_msg_wg_getprovince_no_3">操作失败，请联系客服，谢谢！</string>
+ 	
+ 	<string name="gb_account_err_msg_wg_getcity_no_1">操作失败，请联系客服，谢谢！</string>
+ 	<string name="gb_account_err_msg_wg_getcity_no_2">操作失败，请联系客服，谢谢！</string>
+ 	<string name="gb_account_err_msg_wg_getcity_no_3">操作失败，请联系客服，谢谢！</string>
+ 	
+ 	<string name="gb_account_err_msg_wg_getbranches_no_1">操作失败，请联系客服，谢谢！</string>
+ 	<string name="gb_account_err_msg_wg_getbranches_no_2">操作失败，请联系客服，谢谢！</string>
+ 	<string name="gb_account_err_msg_wg_getbranches_no_3">操作失败，请联系客服，谢谢！</string>
+ 	
+</resources>

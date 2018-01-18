@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="@color/wh"
+    android:fitsSystemWindows="true">
+    <!--顶部栏-->
+    <RelativeLayout
+        android:id="@+id/winguo_login_top_view"
+        style="@style/top_property"
+        android:background="@color/wh">
+
+        <RelativeLayout
+            android:id="@+id/account_register_back"
+            android:layout_width="@dimen/hybrid4_account_login_back_w"
+            android:layout_height="@dimen/hybrid4_account_login_back_h"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/hybrid4_account_login_back_ml"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="@dimen/hybrid4_account_login_back_iv_w"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/hybrid4_account_login_back_iv_ml"
+                android:layout_marginTop="@dimen/hybrid4_account_login_back_iv_mt"
+                android:src="@drawable/winguo_app_login_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_title"
+            android:textColor="#404040"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/line"/>
+    <EditText
+        android:id="@+id/account_register_phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hybrid4_account_register_prompt_name"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:background="@null"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:padding="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:theme="@style/MyEditText" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white1" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <EditText
+            android:id="@+id/account_register_send_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/account_register_send_code"
+            android:inputType="number"
+            android:maxLength="6"
+            android:background="@null"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:padding="20dp"
+            android:theme="@style/MyEditText" />
+        <TextView
+            android:id="@+id/account_register_gainedcode_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="right|center_vertical"
+            android:hint="@string/account_register_gainedcode_tv"/>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white1" />
+    <EditText
+        android:id="@+id/account_register_setpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/account_register_setpwd"
+        android:maxLength="16"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:background="@null"
+        android:padding="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:theme="@style/MyEditText" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white1" />
+    <EditText
+        android:id="@+id/account_register_set_inviter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/account_register_set_inviter"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:background="@null"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:padding="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:theme="@style/MyEditText" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white1" />
+    <Button
+        android:id="@+id/account_register_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/winguo_login_ll_account_ml"
+        android:layout_marginRight="@dimen/winguo_login_ll_account_ml"
+        android:layout_marginTop="@dimen/winguo_account_login_button_mt"
+        android:background="@drawable/pay_success_blue_solid_btn"
+        android:gravity="center"
+        android:text="@string/account_register_bt"
+        android:textColor="@color/wh"
+        android:textSize="18sp" />
+
+</LinearLayout>

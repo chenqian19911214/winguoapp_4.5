@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myspace_store_head_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--头部区-->
+            <LinearLayout
+                android:id="@+id/myspace_store_headview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include
+                    layout="@layout/nearby_store_home_head_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="1dp"
+                    android:background="@drawable/winguo_myspace_store_classify_bg">
+                    <TextView
+                        android:id="@+id/myspace_store_recommend_shop"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/winguo_myspace_store_classify_bg_h"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/wh"
+                        android:text="商品推荐"
+                        android:background="@drawable/winguo_myspace_store_classify_selector_bg"/>
+                    <TextView
+                        android:id="@+id/myspace_store_all_shop"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/winguo_myspace_store_classify_bg_h"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/main_navi_color_selector"
+                        android:text="全部商品"/>
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--头部区-end->
+            <!-数据条目区-->
+            <RelativeLayout
+                android:id="@+id/myspace_store_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="blocksDescendants">
+
+            </RelativeLayout>
+            <!--数据条目区-->
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

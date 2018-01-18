@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/changes_goods_count_padding"
+        android:text="@string/dispatch_method_text"
+        android:textSize="@dimen/dispatch_method_view_close_size"
+        android:textColor="@color/tv_product_list_name_color"/>
+    <ListView
+        android:id="@+id/lv_dispatch_method"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/tv_dispatch_method_colse_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dispatch_method_view_close_hight"
+        android:background="@drawable/pay_bg"
+        android:gravity="center"
+        android:text="@string/dispatch_method_view_close_text"
+        android:textSize="@dimen/dispatch_method_view_close_size"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

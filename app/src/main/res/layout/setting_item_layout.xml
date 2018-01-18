@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gride_view_selector"
+    android:padding="@dimen/setting_padding">
+
+    <TextView
+        android:id="@+id/setting_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/user_nickname_fl_ml"
+        android:text="@string/account_and_safe"
+        android:textColor="@color/user_wallet_text_color"
+        android:textSize="@dimen/person_item_textsize" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/user_nickname_fl_mr"
+        android:src="@drawable/classify_arrows_right" />
+
+</FrameLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tr"
+    >
+
+    <TextView
+        android:id="@+id/no_shop_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin_product_list_price_top"
+        android:drawableTop="@drawable/no_data"
+        android:gravity="center"
+        android:text="@string/no_shop"
+        android:textSize="@dimen/no_shop_tv_size"
+        android:textColor="#6a6a6a"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

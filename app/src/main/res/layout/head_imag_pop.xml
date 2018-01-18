@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wh">
+
+    <TextView
+        android:id="@+id/phone_camera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_camera_h"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:layout_margin="5dp"
+        android:text="@string/phone_camera"/>
+
+    <TextView
+        android:id="@+id/phone_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_gallery_h"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:layout_margin="5dp"
+        android:text="@string/phone_gallery"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textColor"/>
+
+    <TextView
+        android:id="@+id/phone_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_cancel_h"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:layout_margin="5dp"
+        android:text="@string/phone_cancel"/>
+
+</LinearLayout>

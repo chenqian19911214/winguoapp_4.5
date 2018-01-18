@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:minHeight="@dimen/hybrid4_account_bankcard_item_height"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="@dimen/hybrid4_account_bankcard_item_height"
+        android:layout_height="@dimen/hybrid4_account_bankcard_item_height" >
+
+        <ImageView
+            android:id="@+id/hybrid4_account_bankcard_item_image"
+            android:layout_width="@dimen/hybrid4_account_bankcard_item_icon_width"
+            android:layout_height="@dimen/hybrid4_account_bankcard_item_icon_width"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/hybrid4_account_bankcard_item_bankname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="1dp"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:textColor="#4d5255" 
+                android:textSize="@dimen/hybrid4_account_bankcard_item_bankname_size"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/hybrid4_account_bankcard_item_cardnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="1dp"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:textColor="#4d5255"
+                android:textSize="@dimen/hybrid4_account_bankcard_item_banknumber_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hybrid4_account_bankcard_item_normalcard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/hybrid4_account_bankcard_item_normal_text_margin"
+        android:layout_marginRight="@dimen/hybrid4_account_bankcard_item_normal_text_margin"
+        android:text="@string/hybrid4_account_bankcard_default"
+        android:textColor="#acafb1"
+        android:textSize="@dimen/hybrid4_account_bankcard_item_normal_text_size" />
+
+    <Button
+        android:id="@+id/hybrid4_account_bankcard_item_editcard"
+        android:layout_width="@dimen/hybrid4_account_bankcard_item_button_width"
+        android:layout_height="@dimen/hybrid4_account_bankcard_item_button_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/hybrid4_account_bankcard_item_button_space"
+        android:background="@drawable/hybrid4_account_bank_button_edit_bg"
+        android:text="@string/hybrid4_account_bankcard_alter"
+        android:textColor="#4e555a"
+        android:textSize="@dimen/hybrid4_account_bankcard_item_button_text_size" />
+
+    <Button
+        android:id="@+id/hybrid4_account_bankcard_item_deletecard"
+        android:layout_width="@dimen/hybrid4_account_bankcard_item_button_width"
+        android:layout_height="@dimen/hybrid4_account_bankcard_item_button_height"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/hybrid4_account_bankcard_item_margin_right"
+        android:background="@drawable/hybrid4_account_bank_button_edit_bg"
+        android:text="@string/hybrid4_account_bankcard_delete"
+        android:textColor="#4e555a"
+        android:textSize="@dimen/hybrid4_account_bankcard_item_button_text_size" />
+
+</LinearLayout>

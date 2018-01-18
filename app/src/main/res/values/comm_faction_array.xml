@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="home_comm_faction_name">
+        <item>"找商品"</item>
+        <item>"找服务"</item>
+        <item>"住酒店"</item>
+        <item>"查交通"</item>
+        <item>"58到家"</item>
+        <item>"电影"</item>
+        <item>"飞机票"</item>
+        <item>"大众点评"</item>
+    </string-array>
+
+    <string-array name="home_life_service_name">
+        <item>"找商品"</item>
+        <item>"找服务"</item>
+        <item>"住酒店"</item>
+        <item>"查交通"</item>
+        <item>"58到家"</item>
+        <item>"电影"</item>
+        <item>"飞机票"</item>
+        <item>"大众点评"</item>
+    </string-array>
+
+    <string-array name="home_page_shop_classify_name">
+        <item>"服饰鞋包"</item>
+        <item>"中外名酒"</item>
+        <item>"家具日用"</item>
+        <item>"家用电器"</item>
+    </string-array>
+
+    <string-array name="home_page_shop_classify_icons">
+        <item>@drawable/home_page_shop_classify_clothes</item>
+        <item>@drawable/home_page_shop_classify_wine</item>
+        <item>@drawable/home_page_shop_classify_day_use</item>
+        <item>@drawable/home_page_shop_house_ele</item>
+    </string-array>
+
+    <!--个人中心-->
+    <string-array name="personal_center_more_menu_name">
+        <item>"我的订单"</item>
+        <item>"我的收藏"</item>
+        <item>"我的伙伴"</item>
+      <!--  <item>"数据中心"</item>
+        <item>"社会创客"</item>-->
+        <item>"轻松创业"</item>
+    </string-array>
+
+    <string-array name="personal_center_more_menu_icons">
+        <item>@drawable/personal_center_order</item>
+        <item>@drawable/personal_center_collection</item>
+        <item>@drawable/personal_center_my_parter</item>
+       <!-- <item>@drawable/personal_center_authentication</item>
+        <item>@drawable/shehuichuangke</item>-->
+        <item>@drawable/xuesheng</item>
+    </string-array>
+    <!--个人中心-->
+    <!--设置中心-->
+    <string-array name="setting_center_menu_names">
+        <item>"个人信息设置"</item>
+        <item>"安全中心"</item>
+        <item>"帮助中心"</item>
+        <item>"检测更新"</item>
+        <item>"意见反馈"</item>
+        <item>"关于我们"</item>
+        <item>"推荐者绑定"</item>
+    </string-array>
+    <!--钱包中心-->
+    <string-array name="mywallet_center_life_service_name">
+        <item>"充值中心"</item>
+        <item>"酒店入住"</item>
+        <item>"电影演出"</item>
+        <item>"生活缴费"</item>
+    </string-array>
+
+    <string-array name="mywallet_center_life_service_new_icons">
+        <item>@drawable/my_wallet_center_recharge</item>
+        <item>@drawable/my_wallet_center_hotel</item>
+        <item>@drawable/my_wallet_center_movie</item>
+        <item>@drawable/my_wallet_center_lifepay</item>
+    </string-array>
+    <!--钱包中心-->
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="58dp"
+	    android:orientation="horizontal"
+	    android:weightSum="1.0"
+	    android:id="@+id/hybrid4_account_expandable_toggle"
+	    
+	    android:paddingLeft="23dp"
+        android:paddingRight="5dp"
+	    >
+	    <TextView android:id="@+id/hybrid4_account_ac_item_name"
+	        android:layout_width="0dp"
+	        android:layout_height="58dp"
+	        android:layout_weight="0.25"
+	        android:textColor="#929393"
+	        android:textSize="15sp"
+	        android:gravity="center_vertical"
+	        />
+	    
+	    <TextView android:id="@+id/hybrid4_account_ac_item_accont"
+	        android:layout_width="0dp"
+	        android:layout_height="58dp"
+	        android:layout_weight="0.5"
+	        android:textColor="#929393"
+	        android:textSize="15sp"
+	        android:gravity="center_vertical"
+	        /> 
+	</LinearLayout>

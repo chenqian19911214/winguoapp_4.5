@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/life_service"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/life_service"
+        android:textSize="20sp" />
+
+    <ImageView style="@style/horizontal_divider" />
+
+   <com.winguo.view.IGridView
+        android:id="@+id/home_life_service_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:columnWidth="80dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth">
+
+    </com.winguo.view.IGridView>
+
+   <TextView
+        android:id="@+id/life_see_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="查看更多"
+        android:textSize="18sp"
+       android:visibility="gone"/>
+</LinearLayout>

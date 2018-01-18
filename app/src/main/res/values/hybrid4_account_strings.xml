@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hybrid4_account_account_center">我的钱包</string>
+    <string name="hybrid4_account_login_center">用户登录</string>
+    <string name="hybrid4_account_register_center">用户注册</string>
+    <string name="hybrid4_account_resetpwd_center">重置密码</string>
+    <string name="hybrid4_account_my_bank_card">我的银行卡</string>
+
+    <string name="hybrid4_account_bank_card">银行卡</string>
+    <string name="hybrid4_account_my_wallet">我的钱包</string>
+    <string name="hybrid4_account_add_bank_card">添加银行卡</string>
+
+    <string name="hybrid4_account_describtion">详情</string>
+    <string name="hybrid4_account_login">登 录</string>
+    <string name="hybrid4_account_register">注册</string>
+    <string name="hybrid4_account_all_order">全部订单</string>
+    <string name="hybrid4_account_register2">注册并登陆</string>
+
+    <string name="hybrid4_account_display_pwd">" 显示密码"</string>
+    <string name="hybrid4_account_prompt_name">请输入账户名</string>
+    <string name="hybrid4_account_prompt_password">请输入密码</string>
+    <string name="hybrid4_account_prompt_password2">请输入您的登录密码</string>
+    <string name="hybrid4_account_please_login_first">请先登录</string>
+    <string name="hybrid4_account_bankcard_delete">删除</string>
+    <string name="hybrid4_account_bankcard_confirm_delete">确认删除</string>
+    <string name="hybrid4_account_bankcard_deleting">正在删除请稍候&#8230;</string>
+    <string name="hybrid4_account_bankcard_delete_succeed">删除成功</string>
+    <string name="hybrid4_account_bankcard_add">添  加</string>
+    <string name="hybrid4_account_bankcard_adding">正在添加请稍候&#8230;</string>
+    <string name="hybrid4_account_bankcard_add_succeed">添加成功!</string>
+    <string name="hybrid4_account_bankcard_alter">修改</string>
+    <string name="hybrid4_account_bankcard_altering">正在修改请稍候&#8230;</string>
+    <string name="hybrid4_account_bankcard_alter_succeed">修改成功!</string>
+    <string name="hybrid4_account_bankcard_updating_list">正在刷新列表，请稍候&#8230;</string>
+    <string name="hybrid4_account_bankcard_readerr">银行卡信息读取失败</string>
+    <string name="hybrid4_account_bankcard_update">刷新</string>
+    <string name="hybrid4_account_bankcard_default">默认</string>
+    <string name="hybrid4_account_bankcard_back">返回</string>
+    <string name="hybrid4_account_bankcard_cancel">取消</string>
+    <string name="hybrid4_account_bankcard_our_diaoyudao">钓鱼岛</string>
+    <string name="hybrid4_account_bankcard_getting_err">读取数据失败</string>
+    <string name="hybrid4_account_bankcard_nobranches_err1">很抱歉,没有在</string>
+    <string name="hybrid4_account_bankcard_nobranches_err2">找到</string>
+    <string name="hybrid4_account_bankcard_our_diaoyudao_err1">似乎还没有开到钓鱼岛上哦，努力吧骚年！就看你的了！</string>
+    <string name="hybrid4_account_bankcard_getting_province">正在读取省份列表，请稍候&#8230;</string>
+    <string name="hybrid4_account_bankcard_getting_city">正在读取城市列表，请稍候&#8230;</string>
+    <string name="hybrid4_account_bankcard_getting_bank_branches">正在读取支行列表，请稍候&#8230;</string>
+    <string name="hybrid4_account_bankcard_select_bank">请选择银行</string>
+    <string name="hybrid4_account_bankcard_select_bank_branches">请选择开户行</string>
+    <string name="hybrid4_account_bankcard_select_province">选择省份</string>
+    <string name="hybrid4_account_bankcard_select_city">选择城市</string>
+    <string name="hybrid4_account_bankcard_select_branches">选择开户行</string>
+    <string name="hybrid4_account_bankcard_input_usename">请输入开户人名称</string>
+    <string name="hybrid4_account_bankcard_input_cardnumber">请输入卡号</string>
+    <string name="hybrid4_account_bankcard_edit_inspection_msg">请输入开户人名称和卡号!</string>
+    <string name="hybrid4_account_bankcard_setnormal">设为默认</string>
+    <string name="hybrid4_account_bankcard_unchanged">您的银行卡信息没有改动!</string>
+    <string name="hybrid4_account_bankcard_help_msg_select_bank">\t请选择银行。</string>
+    <string name="hybrid4_account_bankcard_help_msg_select_bank_branches">\t请选择银行卡的开户行。</string>
+    <string name="hybrid4_account_bankcard_help_msg_input_bankcard_usename">\t请输入银行卡的开户人名称。</string>
+    <string name="hybrid4_account_bankcard_help_msg_input_bankcard_number">\t请输入银行卡卡号。</string>
+    <string name="hybrid4_account_bankcard_help_msg_hint_1">添加银行卡用于提现</string>
+    <string name="hybrid4_account_bankcard_help_msg_hint_2">无需网银/免手续费</string>
+    <string name="hybrid4_account_bankcard_help_msg_hint_3">为您的帐户提供多重保障</string>
+    <string name="hybrid4_account_bankcard_help_msg_hint_3_desc1_title">安全保障：</string>
+    <string name="hybrid4_account_bankcard_help_msg_hint_3_desc1_msg">帐户保护，紧急冻结。</string>
+    <string name="hybrid4_account_bankcard_help_msg_hint_3_desc2_title">支付验证：</string>
+    <string name="hybrid4_account_bankcard_help_msg_hint_3_desc2_msg">每次支付必须验证支付密码。</string>
+    <string name="hybrid4_account_bankcard_help_msg_hint_3_desc3_title">隐私保护：</string>
+    <string name="hybrid4_account_bankcard_help_msg_hint_3_desc3_msg">高强度数据加密，保护用户隐私信息。</string>
+
+    <string name="hybrid4_account_bankcard_match_hint_title">温馨提示：</string>
+    <string name="hybrid4_account_bankcard_match_error_msg">您输入的银行卡号不正确，确定重新检查后提交吗？</string>
+    <string name="hybrid4_account_bankcard_match_success_msg">您确认添加此银行卡吗？</string>
+    <string name="hybrid4_account_bankcard_modify_success_msg">您确认修改的银行卡信息吗？</string>
+    <string name="hybrid4_account_bankcard_status_lock">暂时无法访问更多信息，请您稍等&#8230;</string>
+
+    <string name="hybrid4_account_prompt_newpassword">请输入新密码</string>
+
+    <string name="hybrid4_account_register_prompt_name">请输入手机号码</string>
+    <string name="hybrid4_account_register_recommend_phone">填写邀请人手机号</string>
+    <string name="hybrid4_account_free_registration">免费注册</string>
+    <string name="hybrid4_account_forget_password">忘记密码?</string>
+
+    <string name="hybrid4_account_read_agreement">我已阅读并同意协议</string>
+    <string name="hybrid4_account_winguo_agreement">问果注册协议</string>
+
+
+    <string name="hybrid4_account_send_captcha">发送</string>
+    <string name="hybrid4_account_send_captcha2">获取验证码</string>
+    <string name="hybrid4_account_input_captcha">请输入验证码</string>
+
+    <string name="hybrid4_account_agree_agreement">请同意协议</string>
+
+    <string name="hybrid4_account_status_init">正在初始化信息&#8230;</string>
+    <string name="hybrid4_account_status_hello_begin">您好，</string>
+    <string name="hybrid4_account_status_hello_end">！</string>
+    <string name="hybrid4_account_status_successed">已登录</string>
+    <string name="hybrid4_account_status_unlogined">点击登录</string>
+    <string name="hybrid4_account_status_logined">退出登录</string>
+
+    <string name="hybrid4_account_info_getting_bank_messages">正在读取您的银行卡信息请稍候&#8230;</string>
+
+    <string name="hybrid4_account_info_register">正在注册，请稍候&#8230;</string>
+    <string name="hybrid4_account_info_register_success">注册成功!</string>
+
+    <string name="hybrid4_account_info_login">正在登录，请稍候&#8230;</string>
+    <string name="hybrid4_account_info_feedback">正在提交反馈，请稍候&#8230;</string>
+    <string name="hybrid4_account_info_login_success">登录成功!</string>
+    <string name="hybrid4_account_info_refresh_success">刷新成功</string>
+
+    <string name="hybrid4_account_info_logout">正在退出，请稍候&#8230;</string>
+    <string name="hybrid4_account_info_logout_success">注销成功</string>
+
+    <string name="hybrid4_account_info_captcha_sending">正在发送验证码，请稍候&#8230;</string>
+    <string name="hybrid4_account_info_captcha_sended">验证码发送成功，请查收</string>
+
+    <string name="hybrid4_account_info_pwd_modyfing">正在修改密码，请稍候&#8230;</string>
+    <string name="hybrid4_account_info_pwd_reseted">密码修改成功</string>
+
+    <string name="hybrid4_account_userinfo_empty">用户名与密码不能为空</string>
+    <string name="hybrid4_account_phone_empty">手机号码不能为空</string>
+    <string name="hybrid4_account_accountname_empty">用户名不能为空</string>
+    <string name="hybrid4_account_captcha_empty">验证码不能为空</string>
+    <string name="hybrid4_account_pwd_empty">密码不能为空</string>
+    <string name="hybrid4_account_check_pwd_empty">确认密码不能为空</string>
+    <string name="hybrid4_account_check_pwd_unequal">两次输入的密码不同，请确认！</string>
+
+    <string name="hybrid4_account_info_resend">重新发送(%1$ss)</string>
+    <string name="hybrid4_account_balance">余额</string>
+    <string name="hybrid4_account_gb">果币</string>
+
+    <string name="hybrid4_account_gb_all">全部金额</string>
+    <string name="hybrid4_account_gb_frozen">冻结金额</string>
+
+    <!-- <string-array name="hybrid4_account_menu_array">
+        <item >免费注册</item>
+        <item >切换账号</item>
+        <item >修改密码</item>
+        <item >反馈</item>
+        <item >帮助</item>
+        <item >退出登录</item>
+    </string-array> -->
+
+    <string-array name="hybrid4_account_menu_array">
+        <item>免费注册</item>
+        <item>切换账号</item>
+        <item>反馈</item>
+        <item>退出登录</item>
+    </string-array>
+</resources>

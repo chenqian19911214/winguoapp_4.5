@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<string name="UMBreak_Network">Please make sure you are connected to internet,update failed</string>
+	<string name="UMUpdateTitle">New version found</string>
+	<string name="UMNewVersion">Latest version: </string>
+	<string name="UMUpdateContent">Update Content</string>
+	<string name="UMUpdateSize">Update size: </string>
+	<string name="UMTargetSize">Target size: </string>
+	<string name="UMGprsCondition">(Warning: Not WIFI Condition)</string>
+	<string name="UMUpdateNow">Update now</string>
+	<string name="UMAppUpdate">App updating</string>
+	<string name="UMNotNow">Not now</string>
+	<string name="UMIgnore">Ingore this</string>
+	<string name="UMToast_IsUpdating">Updating....</string>
+	<string name="UMDialog_InstallAPK">The lastest version has been downloaded, install now ?</string>
+	<string name="UMUpdateCheck">2.4.1.20140228</string>
+    
+	<string name="umeng_is_new_version">当前版本是最新版本</string>
+	<string name="umeng_server_busy">服务器繁忙</string>
+	<string name="umeng_connect_fail">网络连接失败...</string>
+	
+	<string name="umeng_is_not_wifi_content">没有wifi连接， 只在wifi下更新</string>	
+</resources>

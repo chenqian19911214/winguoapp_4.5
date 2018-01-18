@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_color"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/ll_product_table"-->
+    <!--style="@style/table_bar"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+    <!--<FrameLayout-->
+    <!--android:id="@+id/pay_fail_back_btn"-->
+    <!--android:layout_width="@dimen/back_container_width"-->
+    <!--android:layout_height="match_parent"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--style="@style/back_btn"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/back2" />-->
+    <!--</FrameLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/product_screen_btn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="@string/pay_fail_text"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:textColor="@color/product_screen_title_text_color"-->
+    <!--android:textSize="@dimen/tv_product_list_price2_size" />-->
+    <!--</RelativeLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/title_color"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_screen_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pay_fail_icon_margin_top"
+                    android:gravity="center"
+                    android:text="@string/pay_fail_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tv_product_list_price2_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pay_success_icon_margin_bottom"
+                    android:layout_marginTop="@dimen/pay_success_icon_margin_top"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/pay_fail_icon_width"
+                        android:layout_height="@dimen/pay_fail_icon_width"
+                        android:layout_marginLeft="@dimen/pay_fail_icon_margin_left"
+                        android:src="@drawable/pay_fail" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/pay_fail_text1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/pay_fail_text_size" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="@string/pay_fail_hint_text"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/pay_fail_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/pay_fail_goods_info_margin"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_physical_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/physical_pay_success_address_padding">
+
+                    <TextView
+                        android:id="@+id/physical_pay_fail_consignee_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/pay_result_consignee_text"
+                        android:textColor="@color/pay_result_receiver_address_text_color"
+                        android:textSize="@dimen/pay_success_address_text_size" />
+
+                    <TextView
+                        android:id="@+id/physical_pay_fail_consignee_phone_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/pay_result_receiver_address_text_color"
+                        android:textSize="@dimen/pay_success_address_text_size" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_store_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="5dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/address_icon" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp">
+
+                            <TextView
+                                android:id="@+id/pay_fail_consignee_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/pay_result_consignee_text"
+                                android:textColor="@color/pay_result_receiver_address_text_color"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/pay_fail_consignee_phone_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/pay_result_receiver_address_text_color"
+                                android:textSize="14sp" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/pay_fail_consignee_address_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/pay_result_receiver_address_text"
+                            android:textColor="@color/pay_result_receiver_address_text_color"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pay_fail_goods_info_margin"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/pay_fail_goods_info_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/pay_result_order_title_text"
+                    android:textColor="@color/pay_result_hint_text_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line"
+                    android:background="@drawable/hidden_line"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_pay_fail_icon"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_fail_goods_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_product_list_price_top"
+                        android:layout_toRightOf="@+id/iv_pay_fail_icon"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text=""
+                        android:textColor="@color/tv_product_list_name_color"
+                        android:textSize="@dimen/cart_goods_name_size" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_fail_goods_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/pay_result_hint_text_color"
+                        android:textSize="@dimen/tv_product_list_price_size" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pay_fail_goods_price_text"
+                        android:textColor="@color/pay_result_hint_text_color"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_fail_goods_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/pay_success_goods_price_color"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pay_again_btn"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/pay_success_blue_solid_btn"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/pay_again_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/shopping_again_text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

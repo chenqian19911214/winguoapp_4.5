@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <GridView
+        android:id="@+id/product_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/product_goods_vertical_spacing"
+        android:horizontalSpacing="@dimen/product_goods_horizontal_spacing"
+        android:numColumns="2"/>
+
+</LinearLayout>

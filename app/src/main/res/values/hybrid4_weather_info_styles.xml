@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="hybrid4_weather_info_main_activity_theme" parent="@android:style/Theme">
+        <item name="@android:activityOpenEnterAnimation">@anim/hybrid4_tutorials_slide_in_left</item>
+        <item name="@android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="@android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="@android:activityCloseExitAnimation">@anim/hybrid4_tutorials_slide_out_right</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="hybrid4_weather_info_manager_activity_theme">
+        <item name="@android:activityOpenEnterAnimation">@anim/hybrid4_tutorials_slide_in_left</item>
+        <item name="@android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="@android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="@android:activityCloseExitAnimation">@anim/hybrid4_tutorials_slide_out_right</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="hybrid4_weather_info_select_activity_theme">
+        <item name="@android:activityOpenEnterAnimation">@anim/hybrid4_tutorials_slide_in_left</item>
+        <item name="@android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="@android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="@android:activityCloseExitAnimation">@anim/hybrid4_tutorials_slide_out_right</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="weather_normal_color">@*android:color/white</color>
+    <color name="weather_press_color">#ffffffff</color>
+    <color name="weather_shadow_color">#64000000</color>
+    
+	<dimen name="weather_widget_paddingLeft">8.0dip</dimen>
+    <dimen name="weather_widget_paddingright">8.0dip</dimen>
+    <dimen name="weather_widget_paddingTop_2x2">0.0dip</dimen>
+	<dimen name="weather_time_separate_width">18.0dip</dimen>
+    <dimen name="weather_widget_text_size_2x2">13.0sp</dimen>
+    
+    <string name="weather_click_hand">点击起笔区教学小手</string>
+    <string name="weather_click_weatherinfo">点击天气图标进入天气界面</string>
+    <string name="weather_click_city">点击城市进入城市管理界面</string>
+    <string name="weather_click_time_setting">点击进入时间</string>
+    
+	<string name="weather_selete_city">选择城市</string><!-- 选择城市  -->
+	<string name="weather_city_name_selete">城市选择</string>
+    <string name="weather_date_format">yyyy/MM/dd</string>
+    <string name="weather_date_format_hiden_year">MM/dd</string>
+	<string name="weather_fetch_weather_error">天气更新失败&#8230;</string>
+	<!-- 不显示年份 -->
+	<string name="weather_date_hiden_year">weather_date_hiden_year</string>
+	<!-- 只显示平均温度 -->
+	<string name="weather_single_temperature">weather_single_temperature</string>
+	<!-- 城市名前面不显示定位标识 -->
+	<string name="weather_cityname_hiden_leftdrawale">weather_cityname_hiden_leftdrawale</string>
+	<!-- 点击天气图标位置开始刷新 -->
+	<string name="weather_icon_root_click_refresh">weather_icon_root_click_refresh</string>
+	<!-- 禁止刷新图标点击 -->
+	<string name="weather_refresh_icon_disclick">weather_refresh_icon_disclick</string>
+	
+	<string name="weather_longest_cityname">最长城市名</string>
+	
+	<string name="weather_tomorrow">明天</string>
+	
+    <string-array name="weather_weeks">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+    
+    <string-array name="date_piecewise">
+        <item>凌晨</item>
+        <item>早上</item>
+        <item>上午</item>
+        <item>中午</item>
+        <item>下午</item>
+        <item>傍晚</item>
+        <item>晚上</item>
+        <item>子夜</item>
+    </string-array>
+    
+	<style name="WeatherWidgetText">
+        <item name="android:shadowColor">@color/weather_shadow_color</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.8</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/weather_normal_color</item>
+        <item name="android:textSize">@dimen/weather_widget_text_size_2x2</item>
+        <item name="android:ellipsize">marquee</item>
+        <!-- <item name="android:textStyle">bold</item> -->
+    </style>
+    
+	<string name="weather_information_add_city">添加城市</string>
+	<string name="weather_information_city_manager">城市管理</string>
+	<string name="weather_information_city_selector">城市选择</string>
+	<string name="weather_information_open_auto_locate">开启自动定位</string>
+	<string name="weather_information_positioning">定位中&#8230;</string>
+	<string name="weather_information_auto_locate_failed">定位失败，请检查网络&#8230;</string>
+	<string name="weather_information_auto_locate_agin">定位失败，点击刷新</string>
+	
+	<dimen name="weather_information_page_item_text_size">8.5sp</dimen>
+	<dimen name="weather_information_future_item_text_size">6.5sp</dimen>
+	<dimen name="weather_head_text_size">15sp</dimen>
+	
+	<!-- 天气详情背景渐变色调 -->
+	<!-- 起始颜色 -->
+	<!-- 白天 -->
+	<color name="weather_information_bg_color_1">#2c8aff</color>
+	<color name="weather_information_bg_color_2">#b4dafe</color>
+	<color name="weather_information_bg_color_3">#487daf</color>
+	<color name="weather_information_bg_color_4">#afc2d1</color>
+	<color name="weather_information_bg_color_5">#929ff4</color>
+	<color name="weather_information_bg_color_6">#e4e9ed</color>
+	<integer-array name="weather_information_bg_from_colors_d">
+	    <item>@color/weather_information_bg_color_1</item>
+	    <item>@color/weather_information_bg_color_2</item>
+	    <item>@color/weather_information_bg_color_3</item>
+	    <item>@color/weather_information_bg_color_4</item>
+	    <item>@color/weather_information_bg_color_5</item>
+	    <item>@color/weather_information_bg_color_6</item>
+	    <item>@color/weather_information_bg_color_21</item>
+	</integer-array>
+	<!-- 晚上 -->
+	<color name="weather_information_bg_color_7">#3e5b9f</color>
+	<color name="weather_information_bg_color_8">#6b7a9f</color>
+	<color name="weather_information_bg_color_9">#3d5a9d</color>
+	<color name="weather_information_bg_color_10">#9ca6bd</color>
+	<integer-array name="weather_information_bg_from_colors_n">
+	    <item>@color/weather_information_bg_color_7</item>
+	    <item>@color/weather_information_bg_color_7</item>
+	    <item>@color/weather_information_bg_color_7</item>
+	    <item>@color/weather_information_bg_color_8</item>
+	    <item>@color/weather_information_bg_color_9</item>
+	    <item>@color/weather_information_bg_color_10</item>
+	    <item>@color/weather_information_bg_color_21</item>
+	</integer-array>
+	<!-- 结束颜色 -->
+	<!-- 白天 -->
+	<color name="weather_information_bg_color_11">#2bcbff</color>
+	<color name="weather_information_bg_color_12">#358fe3</color>
+	<color name="weather_information_bg_color_13">#7eb4e8</color>
+	<color name="weather_information_bg_color_14">#8295ad</color>
+	<color name="weather_information_bg_color_15">#7553c1</color>
+	<color name="weather_information_bg_color_16">#a2a5b8</color>
+	<integer-array name="weather_information_bg_to_colors_d">
+	    <item>@color/weather_information_bg_color_11</item>
+	    <item>@color/weather_information_bg_color_12</item>
+	    <item>@color/weather_information_bg_color_13</item>
+	    <item>@color/weather_information_bg_color_14</item>
+	    <item>@color/weather_information_bg_color_15</item>
+	    <item>@color/weather_information_bg_color_16</item>
+	    <item>@color/weather_information_bg_color_22</item>
+	</integer-array>
+	<!-- 晚上 -->
+	<color name="weather_information_bg_color_17">#262e5f</color>
+	<color name="weather_information_bg_color_18">#3b4166</color>
+	<color name="weather_information_bg_color_19">#573a9b</color>
+	<color name="weather_information_bg_color_20">#62688c</color>
+	<color name="weather_information_bg_color_21">#9f8471</color>
+	<color name="weather_information_bg_color_22">#e4d7c4</color>
+	<integer-array name="weather_information_bg_to_colors_n">
+	    <item>@color/weather_information_bg_color_17</item>
+	    <item>@color/weather_information_bg_color_17</item>
+	    <item>@color/weather_information_bg_color_17</item>
+	    <item>@color/weather_information_bg_color_18</item>
+	    <item>@color/weather_information_bg_color_19</item>
+	    <item>@color/weather_information_bg_color_20</item>
+	    <item>@color/weather_information_bg_color_22</item>
+	</integer-array>
+	
+	<!-- 底部比例 -->
+	<!-- 白天 -->
+	<integer-array name="weather_information_bg_bottom_scale_d">
+	    <item>0</item>
+	    <item>31</item>
+	    <item>13</item>
+	    <item>0</item>
+	    <item>0</item>
+	    <item>8</item>
+	    <item>13</item>
+	</integer-array>
+	<!-- 晚上 -->
+	<integer-array name="weather_information_bg_bottom_scale_n">
+	    <item>37</item>
+	    <item>37</item>
+	    <item>37</item>
+	    <item>0</item>
+	    <item>0</item>
+	    <item>8</item>
+	    <item>13</item>
+	</integer-array>
+	<!-- 顶部比例 -->
+	<!-- 白天 -->
+	<integer-array name="weather_information_bg_top_scale_d">
+	    <item>0</item>
+	    <item>4</item>
+	    <item>4</item>
+	    <item>0</item>
+	    <item>0</item>
+	    <item>4</item>
+	    <item>4</item>
+	</integer-array>
+	<!-- 晚上 -->
+	<integer-array name="weather_information_bg_top_scale_n">
+	    <item>0</item>
+	    <item>0</item>
+	    <item>0</item>
+	    <item>0</item>
+	    <item>0</item>
+	    <item>4</item>
+	    <item>4</item>
+	</integer-array>
+	<!--
+	 * 晴 bg 0: 
+	 * 云 bg 1: 
+	 * 阴 bg 2:
+	 * 雨 bg 3: 
+	 * 雷 bg 4:
+	 * 雪(雾) bg 5:
+	-->
+	<!-- 字体颜色 -->
+	<!-- 白天 -->
+	<color name="weather_information_text_color_1">#12465f</color>
+	<color name="weather_information_text_color_2">#384654</color>
+	<color name="weather_information_text_color_3">#214364</color>
+	<color name="weather_information_text_color_4">#485763</color>
+	<color name="weather_information_text_color_5">#393864</color>
+	<color name="weather_information_text_color_6">#505357</color>
+	<integer-array name="weather_information_text_color_d">
+	    <item>@color/weather_information_text_color_1</item>
+	    <item>@color/weather_information_text_color_2</item>
+	    <item>@color/weather_information_text_color_3</item>
+	    <item>@color/weather_information_text_color_4</item>
+	    <item>@color/weather_information_text_color_5</item>
+	    <item>@color/weather_information_text_color_6</item>
+	    <item>@color/weather_information_text_color_13</item>
+	</integer-array>
+	<!-- 晚上 -->
+	<color name="weather_information_text_color_7">#a7bcef</color>
+	<color name="weather_information_text_color_8">#bbc8e8</color>
+	<color name="weather_information_text_color_9">#bbc8e8</color>
+	<color name="weather_information_text_color_10">#b4bdd9</color>
+	<color name="weather_information_text_color_11">#afb6e1</color>
+	<color name="weather_information_text_color_12">#e8eaf0</color>
+	<color name="weather_information_text_color_13">#514135</color>
+	<integer-array name="weather_information_text_color_n">
+	    <item>@color/weather_information_text_color_7</item>
+	    <item>@color/weather_information_text_color_8</item>
+	    <item>@color/weather_information_text_color_9</item>
+	    <item>@color/weather_information_text_color_10</item>
+	    <item>@color/weather_information_text_color_11</item>
+	    <item>@color/weather_information_text_color_12</item>
+	    <item>@color/weather_information_text_color_13</item>
+	</integer-array>
+	
+	
+	<item name="hybrid4_weather_informations_drag_handle" type="id"/>
+    <item name="hybrid4_weather_informations_click_remove" type="id"/>
+
+    <declare-styleable name="DragSortListView">
+        <attr name="collapsed_height" format="dimension" />
+        <attr name="drag_scroll_start" format="float" />
+        <attr name="max_drag_scroll_speed" format="float" />
+        <attr name="float_background_color" format="color" />
+        <attr name="float_border_color" format="color" />
+        <attr name="float_border_width" format="dimension"/>
+        <attr name="remove_mode">
+            <enum name="clickRemove" value="0" />
+            <enum name="flingRemove" value="1" />
+        </attr>
+        <attr name="track_drag_sort" format="boolean" />
+        <attr name="float_alpha" format="float" />
+        <attr name="slide_shuffle_speed" format="float" />
+        <attr name="remove_animation_duration" format="integer" />
+        <attr name="drop_animation_duration" format="integer" />
+        <attr name="drag_enabled" format="boolean" />
+        <attr name="sort_enabled" format="boolean" />
+        <attr name="remove_enabled" format="boolean" />
+        <attr name="drag_start_mode">
+            <enum name="onDown" value="0" />
+            <enum name="onMove" value="1" />
+            <enum name="onLongPress" value="2" />
+        </attr>
+        <attr name="drag_handle_id" format="integer" />
+        <attr name="fling_handle_id" format="integer" />
+        <attr name="click_remove_id" format="integer" />
+        <attr name="use_default_controller" format="boolean" />
+    </declare-styleable>
+
+    <color name="hybrid4_weather_informations_float_item_background_color">#00000000</color>
+    <color name="hybrid4_weather_informations_float_item_border_color">#000000</color>
+    <dimen name="hybrid4_weather_informations_float_item_border_width">8.0dp</dimen>
+    
+    <dimen name="hybrid4_weather_informations_drag_item_height">50dp</dimen>
+    
+    <dimen name="hybrid4_weather_informations_drag_image_height">50dp</dimen>
+    <dimen name="hybrid4_weather_informations_drag_image_width">41dp</dimen>
+    <dimen name="hybrid4_weather_informations_drag_image_padding_top">17dp</dimen>
+    <dimen name="hybrid4_weather_informations_drag_image_padding_bottom">17dp</dimen>
+    
+    <dimen name="hybrid4_weather_informations_delete_image_height">50dp</dimen>
+    <dimen name="hybrid4_weather_informations_delete_image_width">50dp</dimen>
+    <dimen name="hybrid4_weather_informations_delete_image_padding">17dp</dimen>
+    <dimen name="hybrid4_weather_informations_delete_image_margin_right">8dp</dimen>
+    
+    <dimen name="hybrid4_weather_informations_text_size">17sp</dimen>
+    <dimen name="hybrid4_weather_informations_text_padding_left">10dp</dimen>
+    <dimen name="hybrid4_weather_informations_text_padding_right">10dp</dimen>
+    
+    <dimen name="hybrid4_weather_informations_cityselect_text_size">15.5sp</dimen>
+    <dimen name="hybrid4_weather_informations_cityselect_item_height">45dp</dimen>
+    <dimen name="hybrid4_weather_informations_cityselect_item_hint_width">30dp</dimen>
+    <dimen name="hybrid4_weather_informations_cityselect_item_hint_padding">12dp</dimen>
+	
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe0e0e0"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <include
+        android:id="@+id/hybrid4_settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/hybrid4_account_head_layout" />
+
+    <RelativeLayout
+        android:id="@+id/hybrid4_account_progress_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/hybrid4_settings_title" >
+        
+        <ProgressBar
+            android:id="@+id/hybrid4_account_getting_progress"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"/><!-- style="?android:attr/progressBarStyleLarge" -->
+
+        <TextView
+            android:id="@+id/hybrid4_account_progress_message"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/hybrid4_account_getting_progress"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/hybrid4_account_info_getting_bank_messages" 
+            android:textSize="17sp"/>
+
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/account_login_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/account_login_container_mt"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginRight="@dimen/winguo_login_ll_account_mr"
+            android:layout_marginTop="10dp">
+
+
+            <EditText
+                android:id="@+id/account_login_user_et_bypwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入手机号码/账号"
+                android:maxLines="1"
+                android:padding="20dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:theme="@style/MyEditText" />
+
+
+            <ImageView
+                android:id="@+id/winguo_login_clear_account"
+                android:layout_width="@dimen/hybrid4_account_login_showpwd_w"
+                android:layout_height="@dimen/hybrid4_account_login_showpwd_h"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/winguo_app_login_account_clear"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/account_login_user_et_bypwd"
+                android:background="@color/white1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_pw_ll_ml"
+            android:layout_marginRight="@dimen/login_pw_ll_ml">
+
+
+            <EditText
+                android:id="@+id/account_login_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"
+                android:padding="20dp"
+                android:password="true"
+                android:background="@null"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:theme="@style/MyEditText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignBottom="@id/account_login_pwd_et"
+                android:background="@color/white1" />
+            <!--android:button="@drawable/toggle_btn"-->
+            <!--android:layout_marginRight="@dimen/hybrid4_account_login_showpwd_cb_mr"-->
+            <ToggleButton
+                android:id="@+id/account_login_showpwd_tb"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/toggle_btn"
+                android:checked="false"
+                android:text=""
+                android:textOff=""
+                android:textOn="" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/account_forgetpwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/hybrid4_account_forgetpwd_tv_mr"
+            android:layout_marginTop="@dimen/account_forgetpwd_tv_mt"
+            android:text="@string/hybrid4_account_forget_password"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/winguo_account_login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginRight="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginTop="@dimen/winguo_account_login_button_mt"
+            android:background="@drawable/pay_success_blue_solid_btn"
+            android:gravity="center"
+            android:text="@string/hybrid4_account_login"
+            android:textColor="@color/wh"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/acccount_weixin_login_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginRight="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginTop="@dimen/winguo_account_register_rl_mt"
+            android:background="@drawable/pay_success_blue_btn"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ssdk_oks_classic_wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/account_weixin_login_tv"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginRight="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginTop="@dimen/winguo_account_register_rl_mt"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/account_register_tip"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/account_register_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/account_register_tv"
+                android:textColor="@color/title_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/home_line"/>
+    <!--活动主题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="@dimen/my_activity_theme_p1">
+        <!--活动主题 1-->
+        <LinearLayout
+            android:id="@+id/activity_theme_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_theme_left_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动主题"
+                    android:textColor="@color/home_mainhead_color"
+                    android:textSize="@dimen/activity_theme1_size"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                   />
+
+                <TextView
+                    android:id="@+id/activity_theme_left_subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="副标题"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                    android:textColor="@color/home_subhead_color"
+                    android:textSize="@dimen/activity_subhead_size"
+                    />
+
+                <ImageView
+                    android:id="@+id/activity_theme_left_icon1"
+                    android:layout_width="@dimen/activity_theme_left_icon1_wh"
+                    android:layout_height="@dimen/activity_theme_left_icon1_wh"
+                    android:layout_gravity="center"
+                     />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/activity_theme_left_icon2"
+                android:layout_width="@dimen/activity_theme_right_icon_wh"
+                android:layout_height="@dimen/activity_theme_right_icon_wh"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+        <!--活动主题 2-->
+        <LinearLayout
+            android:id="@+id/activity_theme_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/activity_theme_right_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动主题2"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                    android:textColor="@color/home_mainhead_color"
+                    android:textSize="@dimen/activity_theme1_size" />
+
+                <TextView
+                    android:id="@+id/activity_theme_right_subhead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="副标题2"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxEms="6"
+                    android:textColor="@color/home_subhead_color"
+                    android:textSize="@dimen/activity_subhead_size" />
+
+                <ImageView
+                    android:id="@+id/activity_theme_right_icon1"
+                    android:layout_width="@dimen/activity_theme_left_icon1_wh"
+                    android:layout_height="@dimen/activity_theme_left_icon1_wh"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/activity_theme_right_icon2"
+                android:layout_width="@dimen/activity_theme_right_icon_wh"
+                android:layout_height="@dimen/activity_theme_right_icon_wh"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/home_line"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="栏目主题"
+        android:textSize="@dimen/clunme_title_size"
+        android:textColor="@color/home_mainhead_color"
+        android:padding="@dimen/my_activity_theme_p"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/home_line"/>
+
+    <!--栏目主题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/my_column_theme_p">
+
+        <!--栏目主题 1-->
+        <LinearLayout
+            android:id="@+id/column_theme_item1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/column_theme_main1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="栏目主题"
+                android:layout_gravity="center"
+                android:textColor="@color/home_mainhead_color"
+                android:textSize="@dimen/activity_theme1_size" />
+
+            <TextView
+                android:id="@+id/column_theme_subhead1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="副标题"
+                android:layout_gravity="center"
+                android:textColor="@color/home_subhead_color"
+                android:textSize="@dimen/activity_subhead_size" />
+
+            <ImageView
+                android:id="@+id/column_theme_icon1"
+                android:layout_width="@dimen/column_theme_icon_wh"
+                android:layout_height="@dimen/column_theme_icon_wh"
+                android:layout_gravity="center"
+               />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/column_theme_item2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/column_theme_main2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动主题"
+                android:layout_gravity="center"
+                android:textColor="@color/home_mainhead_color"
+                android:textSize="@dimen/activity_theme1_size" />
+
+            <TextView
+                android:id="@+id/column_theme_subhead2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="副标题"
+                android:layout_gravity="center"
+                android:textColor="@color/home_subhead_color"
+                android:textSize="@dimen/activity_subhead_size" />
+
+            <ImageView
+                android:id="@+id/column_theme_icon2"
+                android:layout_width="@dimen/column_theme_icon_wh"
+                android:layout_height="@dimen/column_theme_icon_wh"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/column_theme_item3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/column_theme_main3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动主题"
+                android:textColor="@color/home_mainhead_color"
+                android:layout_gravity="center"
+                android:textSize="@dimen/activity_theme1_size" />
+
+            <TextView
+                android:id="@+id/column_theme_subhead3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="副标题"
+                android:layout_gravity="center"
+                android:textColor="@color/home_subhead_color"
+                android:textSize="@dimen/activity_subhead_size" />
+
+            <ImageView
+                android:id="@+id/column_theme_icon3"
+                android:layout_width="@dimen/column_theme_icon_wh"
+                android:layout_height="@dimen/column_theme_icon_wh"
+                android:layout_gravity="center"
+                 />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/column_theme_item4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/column_theme_main4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活动主题"
+                android:textColor="@color/home_mainhead_color"
+                android:layout_gravity="center"
+                android:textSize="@dimen/activity_theme1_size" />
+
+            <TextView
+                android:id="@+id/column_theme_subhead4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="副标题"
+                android:layout_gravity="center"
+                android:textColor="@color/home_subhead_color"
+                android:textSize="@dimen/activity_subhead_size" />
+
+            <ImageView
+                android:id="@+id/column_theme_icon4"
+                android:layout_width="@dimen/column_theme_icon_wh"
+                android:layout_height="@dimen/column_theme_icon_wh"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/home_line"/>
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/activity_banner_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_banner_icon_h"
+        app:banner_pageChangeDuration="800"
+        app:banner_pointAutoPlayAble="true"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+        app:banner_transitionEffect="alpha"/>
+
+
+</LinearLayout>

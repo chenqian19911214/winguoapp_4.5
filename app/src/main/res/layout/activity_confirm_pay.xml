@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+        <!--style="@style/table_bar"-->
+        <!--android:clipToPadding="true"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--android:gravity="center_vertical">-->
+        <!--<FrameLayout-->
+            <!--android:id="@+id/confirm_pay_back_btn"-->
+            <!--android:layout_width="@dimen/back_container_width"-->
+            <!--android:layout_height="match_parent"-->
+            <!--&gt;-->
+            <!--<ImageView-->
+                <!--style="@style/back_btn"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@drawable/back2" />-->
+        <!--</FrameLayout>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="@string/confirm_pay_text"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:textColor="@color/product_screen_title_text_color"-->
+            <!--android:textSize="@dimen/tv_product_list_price2_size" />-->
+    <!--</RelativeLayout>-->
+
+    <FrameLayout
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:id="@+id/fl_confirm_pay_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

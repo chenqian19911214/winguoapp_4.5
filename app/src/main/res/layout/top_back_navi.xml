@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+    <FrameLayout
+        android:id="@+id/top_back"
+        android:layout_width="@dimen/top_back_fl_w"
+        android:layout_height="@dimen/top_back_fl_w"
+        android:layout_marginLeft="@dimen/top_back_marginLeft"
+        android:layout_gravity="center_vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/left_back_btn"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/top_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:text="设置"
+        android:textColor="#333333"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/top_title_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|right"
+        android:textSize="18sp"
+        android:padding="15dp"
+        android:src="@drawable/my_bank_card_add"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_parting_line"
+        android:background="@color/white1"
+        android:layout_gravity="bottom"/>
+
+</FrameLayout>

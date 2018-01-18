@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="#ffe0e0e0" >
+
+    <include
+        android:id="@+id/hybrid4_settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/hybrid4_account_head_layout" />
+
+    <Button
+        android:id="@+id/hybrid4_account_bank_card_handle"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/hybrid4_account_button_drawable"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <!-- input -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/hybrid4_account_bank_card_handle"
+        android:layout_below="@id/hybrid4_settings_title"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="27dp"
+            android:background="@drawable/hybrid4_settings_item_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/hybrid4_account_bankcard_select_bank_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/hybrid4_account_bank_edit_bankicon" 
+                        android:scaleType="centerInside"/>
+
+                    <FrameLayout 
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        
+                        <EditText
+	                        android:id="@+id/hybrid4_account_bankcard_bank_editor"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:background="@null"
+	                        android:enabled="false"
+	                        android:hint="@string/hybrid4_account_bankcard_select_bank"
+	                        android:singleLine="true"
+	                        android:textSize="15sp"
+	                        android:ellipsize="end"
+	                        android:layout_gravity="center_vertical|left"/>
+                        
+                        <View 
+                            android:id="@+id/hybrid4_account_bankcard_select_editor_rect"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+	                     
+                    </FrameLayout>
+                    <ImageView
+                        android:id="@+id/hybrid4_account_bankcard_bank_selector"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:layout_marginRight="7dp"
+                        android:src="@drawable/hybrid4_account_bank_list_open_background" />
+
+                    <ImageView
+                        android:id="@+id/hybrid4_account_bankcard_help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/hybrid4_account_help_drawable" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hybrid4_account_bankcard_help_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:textColor="#c0c0c0"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/hybrid4_account_bankcard_banklist_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:orientation="vertical" 
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1.5dp"
+                        android:background="@drawable/hybrid4_settings_item_division" />
+
+                    <ListView
+                        android:id="@+id/hybrid4_account_bankcard_banklist"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" 
+                        android:divider="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/hybrid4_settings_item_division" />
+            
+            <LinearLayout
+                android:id="@+id/hybrid4_account_bankcard_select_bank_branches_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/hybrid4_account_bank_edit_bank_branches_icon" 
+                        android:scaleType="centerInside"/>
+
+                    <FrameLayout 
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+                        
+                        <EditText
+	                        android:id="@+id/hybrid4_account_bankcard_bank_branches_editor"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="wrap_content"
+	                        android:background="@null"
+	                        android:enabled="false"
+	                        android:hint="@string/hybrid4_account_bankcard_select_bank_branches"
+	                        android:singleLine="true"
+	                        android:textSize="15sp"
+	                        android:ellipsize="end"
+	                        android:layout_gravity="center_vertical|left"/>
+                        
+                        <View 
+                            android:id="@+id/hybrid4_account_bankcard_bank_branches_editor_rect"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+	                     
+                    </FrameLayout>
+                    <ImageView
+                        android:id="@+id/hybrid4_account_bankcard_help2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/hybrid4_account_help_drawable" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hybrid4_account_bankcard_help_desc2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:textColor="#c0c0c0"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/hybrid4_settings_item_division" />
+
+            <LinearLayout
+                android:id="@+id/hybrid4_account_bankcard_input_usename_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/hybrid4_account_bank_edit_usericon" 
+                        android:scaleType="centerInside"/>
+
+                    <EditText
+                        android:id="@+id/hybrid4_account_bankcard_usename_editor"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/hybrid4_account_bankcard_input_usename"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/hybrid4_account_bankcard_help3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/hybrid4_account_help_drawable" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hybrid4_account_bankcard_help_desc3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="7dp"
+                    android:textColor="#c0c0c0"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@drawable/hybrid4_settings_item_division" />
+
+            <LinearLayout
+                android:id="@+id/hybrid4_account_bankcard_input_cardnumber_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/hybrid4_account_bank_edit_cardicon" 
+                        android:scaleType="centerInside"/>
+
+                    <EditText
+                        android:id="@+id/hybrid4_account_bankcard_cardnumber_editor"
+                        android:layout_width="0.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="@string/hybrid4_account_bankcard_input_cardnumber"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/hybrid4_account_bankcard_help4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="27dp"
+                        android:paddingRight="7dp"
+                        android:src="@drawable/hybrid4_account_help_drawable" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/hybrid4_account_bankcard_help_desc4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="7dp"
+                    android:textColor="#c0c0c0"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="10dp" >
+
+            <CheckBox
+                android:id="@+id/hybrid4_account_bankcard_checkbox_setnormal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:button="@drawable/hybrid4_account_checkbox_drawable"
+                android:textColor="#4e555a"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/hybrid4_account_bankcard_checkbox_setnormal_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/hybrid4_account_bankcard_checkbox_setnormal"
+                android:text="@string/hybrid4_account_bankcard_setnormal"
+                android:textColor="#4e555a"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/left_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wh"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--登录区-->
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawlayout_no_login_bg"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true">
+
+        <com.winguo.view.CircleImageView
+            android:id="@+id/user_imag"
+            android:layout_width="@dimen/main_left_menu_login_image_w"
+            android:layout_height="@dimen/main_left_menu_login_image_w"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/winguo_personal_deafault_icon" />
+
+        <ImageView
+            android:id="@+id/left_qr_clode_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/qr_code_bg" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_imag"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/user_name"
+            android:textColor="@color/wh"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--钱包-->
+            <LinearLayout
+                android:id="@+id/ll_user_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_left_menu_user_wallet_mt"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/user_wallet_padding_bottom"
+                android:paddingLeft="@dimen/user_wallet_padding_left"
+                android:paddingRight="@dimen/user_wallet_padding_right"
+                android:paddingTop="@dimen/user_wallet_padding_top">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/wallet" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/main_left_menu_user_wallet_fl_tv_pl"
+                    android:text="@string/user_wallet"
+                    android:textColor="@color/user_wallet_text_color"
+                    android:textSize="@dimen/user_wallet_text_size" />
+            </LinearLayout>
+            <!--我的收藏-->
+            <LinearLayout
+                android:id="@+id/ll_user_collect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/user_wallet_padding_bottom"
+                android:paddingLeft="@dimen/user_wallet_padding_left"
+                android:paddingRight="@dimen/user_wallet_padding_right"
+                android:paddingTop="@dimen/user_wallet_padding_top">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/user_collect" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/main_left_menu_user_wallet_fl_tv_pl"
+                    android:text="@string/user_collect"
+                    android:textColor="@color/user_wallet_text_color"
+                    android:textSize="@dimen/user_wallet_text_size" />
+            </LinearLayout>
+
+
+            <!--我的订单-->
+
+            <LinearLayout
+                android:id="@+id/ll_user_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/user_wallet_padding_bottom"
+                android:paddingLeft="@dimen/user_order_padding_left"
+                android:paddingRight="@dimen/user_wallet_padding_right"
+                android:paddingTop="@dimen/user_wallet_padding_top">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/user_order" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/main_left_menu_user_wallet_fl_tv_pl"
+                    android:text="@string/user_order"
+                    android:textColor="@color/user_wallet_text_color"
+                    android:textSize="@dimen/user_wallet_text_size" />
+            </LinearLayout>
+            <!--实体店订单-->
+            <LinearLayout
+                android:id="@+id/ll_store_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/user_wallet_padding_bottom"
+                android:paddingLeft="@dimen/user_order_padding_left"
+                android:paddingRight="@dimen/user_wallet_padding_right"
+                android:paddingTop="@dimen/user_wallet_padding_top">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/user_order" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/main_left_menu_user_wallet_fl_tv_pl"
+                    android:text="实体店订单"
+                    android:textColor="@color/user_wallet_text_color"
+                    android:textSize="@dimen/user_wallet_text_size" />
+            </LinearLayout>
+            <!--我的伙伴-->
+            <LinearLayout
+                android:id="@+id/ll_user_partner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/user_wallet_padding_bottom"
+                android:paddingLeft="@dimen/user_partner_padding_left"
+                android:paddingRight="@dimen/user_wallet_padding_right"
+                android:paddingTop="@dimen/user_wallet_padding_top">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/user_partner" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/main_left_menu_user_partner_fl_tv_pl"
+                    android:text="@string/user_partner"
+                    android:textColor="@color/user_wallet_text_color"
+                    android:textSize="@dimen/user_wallet_text_size" />
+            </LinearLayout>
+            <!--开通空间站-->
+            <LinearLayout
+                android:id="@+id/my_space_station"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/user_wallet_padding_bottom"
+                android:paddingLeft="@dimen/user_partner_padding_left"
+                android:paddingRight="@dimen/user_wallet_padding_right"
+                android:paddingTop="@dimen/user_wallet_padding_top"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/space_station" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/main_left_menu_user_partner_fl_tv_pl"
+                    android:text="@string/my_space_station"
+                    android:textColor="@color/user_wallet_text_color"
+                    android:textSize="@dimen/user_wallet_text_size" />
+            </LinearLayout>
+
+            <!--设置中心-->
+            <LinearLayout
+
+                android:id="@+id/ll_settings_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/user_wallet_padding_bottom"
+                android:paddingLeft="@dimen/user_wallet_padding_left"
+                android:paddingRight="@dimen/user_wallet_padding_right"
+                android:paddingTop="@dimen/user_wallet_padding_top">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/settings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/main_left_menu_user_partner_fl_tv_pl"
+                    android:text="@string/my_about_we_settings"
+                    android:textColor="@color/user_wallet_text_color"
+                    android:textSize="@dimen/user_wallet_text_size" />
+            </LinearLayout>
+            <!--客服电话-->
+            <LinearLayout
+                android:id="@+id/ll_client_phone_fl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/user_wallet_padding_bottom"
+                android:paddingLeft="@dimen/user_wallet_padding_left"
+                android:paddingRight="@dimen/user_wallet_padding_right"
+                android:paddingTop="@dimen/user_wallet_padding_top">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/customer_phone" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/main_left_menu_user_partner_fl_tv_pl"
+                        android:text="@string/my_client_phone"
+                        android:textColor="@color/user_wallet_text_color"
+                        android:textSize="@dimen/user_wallet_text_size" />
+
+                    <TextView
+                        android:id="@+id/my_client_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="@dimen/my_client_phone_tv_mr"
+                        android:text="@string/my_client_phone_number"
+                        android:textColor="@color/user_wallet_text_color"
+                        android:textSize="@dimen/user_wallet_text_size" />
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!--购物车-->
+        <LinearLayout
+            android:id="@+id/ll_cart_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/main_left_menu_quit_mt"
+            android:layout_marginLeft="@dimen/user_cart_margin_left"
+            android:layout_marginRight="@dimen/user_cart_margin_left"
+            android:background="@drawable/user_cart_shopping_bg"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/user_cart_shoppping"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:text="@string/user_cart_shopping"
+                android:textColor="@color/user_cart_shopping_text_color"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

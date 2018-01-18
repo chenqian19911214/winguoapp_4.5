@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/wh"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/wh"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/home_title_search_tv"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/nearby_title_bg"
+            android:text="请输入搜索店家/商品"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:textColor="#d9d9d9"
+            android:textSize="13sp"
+        />
+    </LinearLayout>
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/home_banner_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fragment_home_advertisement_height"
+        app:banner_pageChangeDuration="800"
+        app:banner_pointAutoPlayAble="true"
+        app:banner_pointContainerBackground="@android:color/transparent"
+        app:banner_pointDrawable="@drawable/bga_banner_selector_point_hollow"
+        app:banner_transitionEffect="alpha"/>
+
+    <include
+        android:id="@+id/home_shop_classify"
+        layout="@layout/home_comm_factions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include
+        layout="@layout/home_my_theme_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/home_line"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="@string/home_today_shop"
+        android:textColor="@color/home_mainhead_color"
+        android:textSize="16sp"/>
+
+    <ImageView style="@style/horizontal_divider"/>
+
+</LinearLayout>

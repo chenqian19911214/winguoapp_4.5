@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fragment_home_top_height">50dp</dimen>
+    <dimen name="fragment_home_marginTop">10dp</dimen>
+    <dimen name="fragment_home_advertisement_height">200dp</dimen>
+    <dimen name="fragment_home_weather_text_width">200dp</dimen>
+    <dimen name="fragment_home_weather_text_marginLeft">20dp</dimen>
+    <dimen name="fragment_home_weather_text_padding">5dp</dimen>
+    <dimen name="fragment_home_weather_area_marginLeft">10dp</dimen>
+    <dimen name="top_feedback_marginRight">17dp</dimen>
+    <dimen name="top_parting_line">1dp</dimen>
+    <dimen name="top_feedback_image_w">25dp</dimen>
+    <dimen name="top_feedback_image_h">25dp</dimen>
+    <dimen name="top_back_image_w">13dp</dimen>
+    <dimen name="top_back_image_h">21dp</dimen>
+    <dimen name="search_top_back_marginLeft">15dp</dimen>
+</resources>

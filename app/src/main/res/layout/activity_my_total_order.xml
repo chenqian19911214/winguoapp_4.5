@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+    <!-- 标题 -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/my_total_order_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:background="@color/wh"
+        app:tabIndicatorColor="@color/title_color"
+        app:tabSelectedTextColor="@color/black">
+
+    </android.support.design.widget.TabLayout>
+    <!--内容区-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/my_total_order_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

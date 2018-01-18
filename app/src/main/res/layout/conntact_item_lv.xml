@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_item_h"
+        android:layout_marginLeft="@dimen/contact_item_ml"
+        android:layout_marginRight="@dimen/contact_item_mr"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/search_contact_nameandnumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/search_imageid"
+                android:layout_width="40dip"
+                android:layout_height="40dip" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/search_type_pop_shop_mt"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/search_contact_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="陈钱"
+                    android:textColor="@color/nan"
+                    android:textSize="@dimen/pay_modify_title_size" />
+
+                <TextView
+                    android:id="@+id/search_contact_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="15112119980"
+                    android:textColor="@color/c_272727"
+                    android:textSize="@dimen/search_contact_nameandnumber_size" />
+
+                <TextView
+                    android:id="@+id/search_contact_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/search_contact_nameandnumber_tv3_ml"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="@dimen/search_contact_nameandnumber_size"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_contact_message_icon"
+            android:layout_width="@dimen/search_contact_message_icon_w"
+            android:layout_height="@dimen/search_contact_message_icon_h"
+            android:layout_marginRight="@dimen/search_contact_message_icon_mr"
+            android:src="@drawable/smsicon" />
+
+        <ImageView
+            android:id="@+id/search_contact_phone_icon"
+            android:layout_width="@dimen/search_contact_phone_icon_w"
+            android:layout_height="@dimen/search_contact_phone_icon_h"
+            android:src="@drawable/conntacticon" />
+
+    </LinearLayout>
+</LinearLayout>

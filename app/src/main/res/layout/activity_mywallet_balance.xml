@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_back_navi" />
+
+    <!--余额-->
+    <!--    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foreground="?android:attr/selectableItemBackground"
+            card_view:cardUseCompatPadding="true">-->
+
+    <LinearLayout
+        android:id="@+id/mywallet_balance_ll"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/my_balance_manager_top_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mywallet_balance_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:text="0.00 $"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/main_more_item_iv_w"
+            android:textColor="@color/title_tt_color"
+            android:textSize="50sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/line_div"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/mywallet_center_cash_coupon_p"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/my_wallet_center_cutline" />
+            <TextView
+                android:id="@+id/mywallet_balance_yucun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/line_div"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/title_tt_color"
+                android:text="预存金额" />
+
+            <TextView
+                android:id="@+id/mywallet_balance_ketix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/line_div"
+                android:layout_centerVertical="true"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="可提现金额"
+                android:textColor="@color/title_tt_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!-- </android.support.v7.widget.CardView>-->
+    <!--余额-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/result_views">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/about_my_label"
+            android:drawableLeft="@drawable/laba"
+            android:drawablePadding="@dimen/main_more_item_p"
+            android:gravity="center_vertical"
+            android:text="@string/creater_wele_tost" />
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/mywallet_balance_manager_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mywallet_balance_manager_recharge_ml"
+        android:layout_marginRight="@dimen/mywallet_balance_manager_recharge_ml"
+        android:layout_marginTop="@dimen/mywallet_balance_manager_recharge_mt"
+        android:background="@drawable/button_submit_selector1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/mywallet_balance_manager_recharge"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mywallet_balance_manager_withdraw_cash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mywallet_balance_manager_recharge_ml"
+        android:layout_marginRight="@dimen/mywallet_balance_manager_recharge_ml"
+        android:layout_marginTop="@dimen/mywallet_balance_manager_withdraw_cash_mt"
+        android:background="@drawable/gride_view_selector"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/mywallet_balance_manager_withdraw_cash"
+        android:textColor="@color/withdraw_cash_tt_color"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

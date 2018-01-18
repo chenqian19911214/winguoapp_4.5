@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/lable_item_content_m"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lable_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/label_bt_bg"
+        android:text="label"
+        android:padding="@dimen/lable_item_content_p"
+        android:textColor="@color/red"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/lable_item_content_modify"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_gravity="right"
+        android:src="@drawable/winguo_app_login_account_clear" />
+
+</FrameLayout>

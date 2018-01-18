@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/white1">
+
+    <!--<include layout="@layout/top_back_navi"/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_feedback_phoneInfo"
+        android:layout_margin="@dimen/my_feedback_info_m"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/feedback_phoneInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/my_feedback_info_m"
+        android:textSize="18sp"
+        android:text="Samsung Android4.1.2 720*1280"/>
+
+    <EditText
+        android:id="@+id/feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_feedback_edit_h"
+        android:gravity="top"
+        android:background="@drawable/feedback_edit_bg"
+        android:layout_margin="@dimen/my_feedback_edit_m"
+        android:padding="@dimen/my_feedback_edit_p"
+        android:hint="@string/idea_content" />
+
+    <RadioButton
+        android:id="@+id/feedback_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/my_feedback_confirm_h"
+        android:layout_marginTop="@dimen/my_feedback_confirm_mt"
+        android:layout_marginLeft="@dimen/my_feedback_confirm_ml"
+        android:layout_marginRight="@dimen/my_feedback_confirm_ml"
+        android:gravity="center"
+        android:button="@null"
+        android:background="@drawable/my_quit_bg"
+        android:text="@string/feedback_confirm"
+        android:textSize="17sp"/>
+</LinearLayout>

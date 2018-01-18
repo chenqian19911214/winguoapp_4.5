@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/nearby_store_home_content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="42dp"
+        android:background="@color/white1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/nearby_store_home_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/nearby_store_home_bt_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            android:id="@+id/nearby_home_bt_cart_view"
+            layout="@layout/nearby_store_home_cart" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

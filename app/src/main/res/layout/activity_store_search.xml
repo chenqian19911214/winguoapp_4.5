@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/lbs_search_bg"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/seach_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:hint="输入商品名称"
+                android:textColorHint="@color/physical_userinfo_input_text"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/seach_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@color/nearby_blue" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_hidtory_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_hidtory_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/history_search_text"
+                android:textColor="@color/default_color"
+                android:textSize="@dimen/screen_size"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/history_image_hight"
+                    android:src="@drawable/winguo_search_history_clear" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <com.winguo.flowlayout.TagFlowLayout
+            android:id="@+id/lv_search_history_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/id_flowlayout_ml"
+            android:layout_marginRight="@dimen/id_flowlayout_ml"
+            zhy:max_select="-1"></com.winguo.flowlayout.TagFlowLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/no_net"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_search_words_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

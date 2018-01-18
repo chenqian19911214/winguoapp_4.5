@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_title_bar"
+    android:layout_width="match_parent"
+    android:background="@color/title_color"
+    android:layout_height="48dp"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    >
+    <FrameLayout
+        android:id="@+id/fl_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="@dimen/title_back_padding"
+        android:layout_marginLeft="@dimen/title_more_margin_right"
+        android:layout_centerVertical="true">
+    <ImageView
+        android:id="@+id/title_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/title_back"/>
+    </FrameLayout>
+
+    <com.winguo.view.CircleImageView
+        android:id="@+id/title_account"
+        android:layout_marginLeft="@dimen/title_head_margin_left"
+        android:layout_width="@dimen/title_head_size"
+        android:layout_height="@dimen/title_head_size"
+        android:layout_toRightOf="@+id/fl_title_back"
+        android:layout_centerVertical="true"
+        android:src="@drawable/winguo_personal_deafault_icon" />
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/title_more_margin_right"
+        android:layout_toRightOf="@id/title_account"
+        android:gravity="center_vertical"
+        android:text="问果空间站"
+        android:textColor="@color/title_white_text_color"
+        android:textSize="@dimen/title_text"
+        android:singleLine="true"
+        android:maxEms="7"
+        android:ellipsize="end"
+        />
+    <FrameLayout
+        android:id="@+id/fl_title_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/title_more_margin_right"
+        android:padding="@dimen/title_more_padding"
+        android:layout_centerVertical="true">
+
+
+    <ImageView
+        android:id="@+id/title_more_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/winguo_home_top_more"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_title_wallet"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/title_more_padding"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/fl_title_more"
+        android:layout_marginRight="@dimen/title_more_margin_right">
+    <ImageView
+        android:id="@+id/title_wallet_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/winguo_personal_my_wallet"/>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ll_product_table"
+        style="@style/table_bar"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical">
+        <FrameLayout
+            android:id="@+id/cart_back_btn"
+            android:layout_width="@dimen/back_container_width"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                style="@style/back_btn"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/back2" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/cart_text"
+            android:textColor="@color/product_title_text_color"
+            android:textSize="@dimen/tv_product_list_price2_size" />
+
+        <TextView
+            android:id="@+id/cart_delete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/cart_goods_delect_text_padding"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_layout_right"
+            android:text="@string/cart_delete_text"
+            android:layout_centerVertical="true"
+            android:textColor="@color/cart_goods_delect_text_color"
+            android:textSize="@dimen/screen_size" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_cart_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true" />
+
+
+</LinearLayout>

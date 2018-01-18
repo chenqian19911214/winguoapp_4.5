@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        style="@style/table_bar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:id="@+id/pay_result_abnormal_back_btn"
+            android:layout_width="@dimen/back_container_width"
+            android:layout_height="match_parent"
+            >
+            <ImageView
+                style="@style/back_btn"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/back2" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pay_result_abnormal_title_text"
+            android:layout_centerVertical="true"
+            android:textColor="@color/product_screen_title_text_color"
+            android:textSize="@dimen/tv_product_list_price2_size" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:id="@+id/iv_pay_result_abnormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_pay_result_abnormal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/pay_result_abnormal_text_size"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/pay_result_abnormal_text_color"
+        android:text="@string/pay_result_abnormal_text"/>
+    <TextView
+        android:id="@+id/pay_result_abnormal_jump_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@drawable/pay_success_blue_solid_btn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/shopping_again_text_size"
+        android:text="@string/pay_result_abnormal_check_order_text"/>
+    </LinearLayout>
+
+</LinearLayout>

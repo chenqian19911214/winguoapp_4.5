@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hybrid4_settings_big_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include
+        layout="@layout/hybrid4_account_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/hybrid4_account_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!-- 登录面板
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="124dp">
+
+                <ImageView
+                    android:id="@+id/hybrid4_account_login_title_bg_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+                    <ImageView android:id="@+id/hybrid4_account_head_icon"
+                        android:layout_width="@dimen/hybrid4_account_head_icon_size"
+                        android:layout_height="@dimen/hybrid4_account_head_icon_size"
+                        android:src="@drawable/hybrid4_account_user_head"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="14dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView android:id="@+id/hybrid4_account_username"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:layout_marginBottom="3dp"
+                            />
+
+                        <TextView android:id="@+id/hybrid4_account_ac_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:singleLine="true"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#fff"
+                            android:gravity="center"
+                            />
+
+                        <Button android:id="@+id/hybrid4_account_ac_login"
+                            android:layout_width="90dp"
+                            android:layout_height="32dp"
+                            android:layout_marginTop="3dp"
+                            android:background="@drawable/hybrid4_account_login_btn_drawable"
+                            android:text="@string/hybrid4_account_status_unlogined"
+                            android:textColor="@color/hybrid4_account_login_textview_color"
+                            android:textSize="15sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+            -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+
+                ><!-- android:background="@drawable/hybrid4_account_ac_content_bg" -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hybrid4_account_ac_wallet_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="17dp"
+                    android:paddingTop="6dp">
+
+                    <TextView
+                        android:id="@+id/hybrid4_account_ac_wallet"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/hybrid4_account_my_wallet"
+                        android:textColor="#fff"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/hybrid4_account_ac_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginRight="8dp"
+                        android:paddingBottom="2dp"
+                        android:paddingTop="2dp"
+                        android:src="@drawable/hybrid4_account_refresh_drawable" />
+                </LinearLayout>
+
+                <!-- <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/hybrid4_account_ac_wallet_divider"
+                    /> -->
+                <!-- <ListView
+                    android:id="@+id/hybrid4_account_ac_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:background="#FFF"
+                    /> -->
+                <LinearLayout
+                    android:id="@+id/hybrid4_account_ac_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/hybrid4_account_ac_layout_background"
+                    android:orientation="vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hybrid4_account_assist_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/hybrid4_account_fun_bank_card"
+                        android:layout_width="65dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:background="@drawable/hybrid4_account_assist_fun_background">
+
+                        <LinearLayout
+                            android:id="@+id/winguo_left_menu_wallet"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/hybrid4_account_fun_bank_card_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="65dp"
+                                android:layout_gravity="center_horizontal"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:src="@drawable/hybrid4_account_fun_bank_card" />
+
+                            <TextView
+                                android:id="@+id/hybrid4_account_fun_bank_card_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:text="@string/hybrid4_account_bank_card"
+                                android:textColor="#4e555a" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/hybrid4_account_fun_new_hint"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginRight="2.5dp"
+                            android:layout_marginTop="4dp"
+                            android:src="@drawable/hybrid4_new_func_tips"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hybrid4_weatherrecmd_default_test_word">乌鲁木齐乌鲁</string>
+    <string name="hybrid4_weatherrecmd_default_city">广州</string>
+    <string name="hybrid4_weatherrecmd_default_date">2014/06/01</string>
+    <string name="hybrid4_weatherrecmd_default_week">星期天</string>
+    <string name="hybrid4_weatherrecmd_default_phenomena">晴</string>
+ 	<string name="hybrid4_weatherrecmd_default_temperature">26℃</string>
+ 	
+    <dimen name="hybrid4_weatherrecmd_default_size">13sp</dimen>
+
+    <color name="hybrid4_weatherrecmd_shadow_color">#ff434343</color>
+    
+    <style name="hybrid4_weatherrecmd_WeatherWidgetText">
+        <item name="android:shadowColor">@color/hybrid4_weatherrecmd_shadow_color</item>
+        <item name="android:shadowDx">0.3</item>
+        <item name="android:shadowDy">0.3</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/hybrid4_weatherrecmd_default_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

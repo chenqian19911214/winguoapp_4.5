@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_register_qr_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mine_wallect_contact_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_qr_code"
+            android:layout_centerVertical="true"
+            android:textColor="@color/my_family_server_text_color"
+            android:textSize="@dimen/mine_wallect_text_size" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mine_qr_code_bg"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_mine_partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mine_wallect_contact_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mine_partner_text"
+            android:layout_centerVertical="true"
+            android:textColor="@color/my_family_server_text_color"
+            android:textSize="@dimen/mine_wallect_text_size" />
+        <ImageView
+            android:id="@+id/jump_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jump_next_bg" />
+        <TextView
+            android:id="@+id/tv_mine_partners_profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/wallect_text_margin_right"
+            android:layout_toLeftOf="@id/jump_next"
+            android:textColor="@color/my_family_server_text_color"
+            android:textSize="@dimen/tv_wallect_text_size"
+            android:text="@string/mine_partners_profit" />
+    </RelativeLayout>
+
+</LinearLayout>

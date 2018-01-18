@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_back_navi" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_wallet_center_top_bg">
+                <!--余额-->
+                <FrameLayout
+                    android:id="@+id/mywallet_center_balance_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/my_wallet_center_recharge_ic_mt">
+
+                    <TextView
+                        android:id="@+id/mywallet_center_balance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="0.00"
+                        android:textStyle="bold"
+                        android:textColor="@color/dialog2_positive_text_color"
+                        android:textSize="50sp" />
+
+                    <TextView
+                        android:id="@+id/my_wallet_center_recharge_ic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:background="@drawable/my_wallet_center_recharge_bg"
+                        android:layout_marginRight="@dimen/my_wallet_center_recharge_ic_mr"
+                        android:text="充值"
+                        android:padding="@dimen/my_wallet_center_recharge_ic_p"
+                        android:textColor="@color/wh"
+                        android:textSize="16sp" />
+
+                </FrameLayout>
+                <!--现金  现金券-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@color/tr"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/mywallet_center_balance_cash"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/my_wallet_center_balance"
+                            android:drawablePadding="10dp"
+                            android:gravity="center_vertical"
+                            android:padding="@dimen/mywallet_center_cash_coupon_p"
+                            android:text="@string/mywallet_center_balance_cash"
+                            android:textColor="@color/wh" />
+
+                    </FrameLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/mywallet_center_cash_coupon_p"
+                        android:src="@drawable/my_wallet_center_cutline" />
+
+                    <FrameLayout
+                        android:id="@+id/mywallet_center_cash_coupon"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/my_wallet_center_cash"
+                            android:drawablePadding="10dip"
+                            android:gravity="center"
+                            android:padding="@dimen/mywallet_center_cash_coupon_p"
+                            android:text="@string/mywallet_center_cash_coupon"
+                            android:textColor="@color/wh" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/mywallet_center_bank_card"
+                style="@style/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/user_wallet_padding_bottom"
+                android:paddingLeft="@dimen/user_wallet_padding_left"
+                android:paddingRight="@dimen/user_wallet_padding_right"
+                android:paddingTop="@dimen/user_wallet_padding_top">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/my_wallet_center_bank" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/imageView4"
+                    android:paddingLeft="@dimen/main_left_menu_user_wallet_fl_tv_pl"
+                    android:text="@string/mywallet_center_bank_card"
+                    android:textColor="@color/user_wallet_text_color"
+                    android:textSize="@dimen/user_wallet_text_size" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/personal_center_arrow" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/white1"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/mywallet_center_credit_card_repay"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gride_view_selector"
+                    android:drawableLeft="@drawable/wallet_credit_card_repay"
+                    android:gravity="center"
+                    android:padding="@dimen/mywallet_center_cash_coupon_p"
+                    android:text="@string/mywallet_center_credit_card_repay" />
+
+                <TextView
+                    android:id="@+id/mywallet_center_character_loan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gride_view_selector"
+                    android:drawableLeft="@drawable/wallet_credit_card_loan"
+                    android:gravity="center"
+                    android:padding="@dimen/mywallet_center_cash_coupon_p"
+                    android:text="@string/mywallet_center_character_loan" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/wallet_center_life_tip_h"
+                android:background="@color/wallet_center_life_tip_color"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="@string/mywallet_life_service_tip"
+                android:textColor="@color/wallet_center_life_tip_tt_color"
+                android:textSize="12sp" />
+
+            <com.winguo.view.IGridView
+                android:id="@+id/mywallet_center_life_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white1"
+                android:columnWidth="30dp"
+                android:gravity="center"
+                android:horizontalSpacing="0.5dp"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.5dp"></com.winguo.view.IGridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white1" />
+
+            <ImageView
+                android:id="@+id/my_wallet_center_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/my_wallet_center_banner_mt"
+                android:scaleType="fitXY"
+                android:src="@drawable/my_wallet_center_recharge_banner" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

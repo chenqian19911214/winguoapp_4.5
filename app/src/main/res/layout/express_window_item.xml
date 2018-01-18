@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/express_window_item_padding"
+    >
+    <TextView
+        android:id="@+id/tv_express_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/express_window_item_text_size"/>
+    <TextView
+        android:id="@+id/tv_express_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_express_name"
+        android:layout_marginLeft="@dimen/express_window_item_margin"
+        android:text=""
+        android:textSize="@dimen/express_window_item_text_size"/>
+    <CheckBox
+        android:id="@+id/express_name_selected_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:clickable="false"
+        android:focusable="false"
+       android:layout_alignParentRight="true"
+        android:background="@drawable/shop_selecter"
+        android:button="@null"/>
+</RelativeLayout>

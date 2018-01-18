@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="70dip"
+    android:background="@color/white1"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/wh"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:gravity="left|center"
+            android:textColor="@color/black1"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/nearby_store_home_title_left_ic"
+            android:text="more >"
+            android:drawablePadding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="10dp"
+            android:gravity="right|center"
+            android:textColor="@color/bl"
+            android:text="more >"
+            android:textSize="18sp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/left_menu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/wh"
+                android:clipToPadding="true"
+                android:fitsSystemWindows="true">
+    <!-- 标题头布局-->
+    <FrameLayout
+        android:id="@+id/personal_center_title_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_center_title_h"
+        android:background="@color/wh"
+        android:paddingTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/personal_center_title"
+            android:textSize="@dimen/personal_center_title_txtsize"
+            android:textColor="@color/personal_center_top_text_color" />
+        <ImageView
+            android:id="@+id/personal_center_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="@dimen/personal_center_setting_mr"
+            android:src="@drawable/personal_center_settings"/>
+    </FrameLayout>
+    <View
+        android:id="@+id/personal_center_login_area_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/personal_center_title_area"
+        android:background="@color/white1"/>
+    <!--登录区-->
+    <RelativeLayout
+        android:id="@+id/personal_center_login_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_center_login_area"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/personal_center_title_area"
+        android:padding="20dp">
+
+        <com.winguo.view.CircleImageView
+            android:id="@+id/personal_center_user_img"
+            android:layout_width="@dimen/personal_center_user_img_w"
+            android:layout_height="@dimen/main_left_menu_login_image_w"
+            android:layout_centerVertical="true"
+            android:src="@drawable/winguo_personal_deafault_icon" />
+
+        <TextView
+            android:id="@+id/personal_center_user_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/personal_center_user_nickname_ml"
+            android:layout_toRightOf="@id/personal_center_user_img"
+            android:ellipsize="end"
+            android:maxEms="7"
+            android:maxLines="1"
+            android:text="@string/user_name"
+            android:textColor="@color/nickname_color"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/personal_center_user_nickname"
+            android:layout_toEndOf="@+id/personal_center_user_img"
+            android:layout_toRightOf="@+id/personal_center_user_img"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/personal_center_user_open_maker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/personal_center_user_nickname_ml"
+                android:layout_toRightOf="@id/personal_center_user_img"
+                android:src="@drawable/personal_center_open_creater"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/personal_center_user_qrcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_toLeftOf="@+id/personal_center_u"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:layout_marginRight="@dimen/sp_16"
+            android:src="@drawable/personal_center_ercode" />
+
+        <ImageView
+            android:id="@+id/personal_center_u"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/personal_center_arrow" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/personal_center_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/personal_center_login_area"
+        android:background="@color/white1"/>
+    <!--钱包-->
+    <RelativeLayout
+        android:id="@+id/personal_center_user_wallet"
+        style="@style/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_center_bottom_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/user_wallet_padding_bottom"
+        android:paddingLeft="@dimen/user_wallet_padding_left"
+        android:paddingRight="@dimen/user_wallet_padding_right"
+        android:paddingTop="@dimen/user_wallet_padding_top">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/personal_center_wallet"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/main_left_menu_user_wallet_fl_tv_pl"
+            android:layout_toRightOf="@id/imageView4"
+            android:layout_centerVertical="true"
+            android:text="@string/user_wallet"
+            android:textColor="@color/user_wallet_text_color"
+            android:textSize="@dimen/user_wallet_text_size"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personal_center_arrow"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/devider_line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/personal_center_user_wallet"
+        android:background="@color/white1"/>
+    <!--开通空间站-->
+    <RelativeLayout
+        android:id="@+id/personal_center_space_station"
+        style="@style/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/devider_line1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/user_wallet_padding_bottom"
+        android:paddingLeft="@dimen/user_partner_padding_left"
+        android:paddingRight="@dimen/user_wallet_padding_right"
+        android:paddingTop="@dimen/user_wallet_padding_top"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/space_station_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/space_station"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/main_left_menu_user_partner_fl_tv_pl"
+            android:layout_toRightOf="@id/space_station_ic"
+            android:text="@string/my_space_station"
+            android:textColor="@color/user_wallet_text_color"
+            android:textSize="@dimen/user_wallet_text_size"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/personal_center_arrow"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/devider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/devider_line_h"
+        android:layout_below="@id/personal_center_space_station"
+        android:background="@color/white1"/>
+    <!--更多功能-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/devider_line"
+        android:orientation="vertical">
+        <com.winguo.view.IGridView
+            android:id="@+id/personal_center_more_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white1"
+            android:columnWidth="80dp"
+            android:gravity="center"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="0.5dp"
+            android:verticalSpacing="0.5dp">
+        </com.winguo.view.IGridView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white1"/>
+    </LinearLayout>
+
+    <!--购物车-->
+    <LinearLayout
+        android:id="@+id/personal_center_cart_shopping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/main_left_menu_quit_mt"
+        android:layout_marginLeft="@dimen/user_cart_margin_left"
+        android:layout_marginRight="@dimen/user_cart_margin_left"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+
+            android:src="@drawable/gouwuche" />
+    </LinearLayout>
+
+</RelativeLayout>

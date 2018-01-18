@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/lbs_search_bg"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/nearby_search_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:hint="输入要搜索的内容"
+            android:singleLine="true"
+            android:background="@null"
+            android:textColor="@color/title_text_color"
+            android:textColorHint="@color/physical_userinfo_input_text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/nearby_search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="搜索"
+            android:layout_marginRight="@dimen/_mine_expect_margin_top"
+            android:textColor="@color/nearby_blue" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/search_edit_resLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+            <com.winguo.view.IListView
+                android:id="@+id/search_shop_chars_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_pay_success_icon"
+            android:layout_width="90dp"
+            android:layout_height="90dp" />
+
+        <TextView
+            android:id="@+id/tv_pay_success_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_product_list_price_top"
+            android:layout_toRightOf="@+id/iv_pay_success_icon"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/tv_product_list_name_color"
+            android:textSize="@dimen/cart_goods_name_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_pay_success_goods_name"
+            android:layout_marginLeft="@dimen/margin_product_list_price_top"
+            android:layout_marginTop="@dimen/margin_layout_right"
+            android:layout_toRightOf="@id/iv_pay_success_icon"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_pay_success_goods_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textColor="@color/pay_result_hint_text_color"
+                android:textSize="@dimen/tv_product_list_price_size" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

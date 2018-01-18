@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/hybrid4_account_expandable_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="23dp"
+
+        android:paddingRight="5dp"
+        android:weightSum="1.0">
+
+        <TextView
+            android:id="@+id/hybrid4_account_ac_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:textColor="#4e555a"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hybrid4_account_ac_item_accont"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:textColor="#f66161"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hybrid4_account_ac_item_info"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:gravity="right"
+            android:text="@string/hybrid4_account_describtion"
+            android:textColor="#49b8ff"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/hybrid4_account_ac_item_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/hybrid4_account_state_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hybrid4_account_expandable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:id="@+id/hybrid4_account_content_des_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>

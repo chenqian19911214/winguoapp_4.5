@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/iv_classify_item_ic"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp">
+
+        <TextView
+            android:id="@+id/iv_classify_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/red"
+            android:text="XXXXXXXXXXXXXXXXXXXXXXXXXX" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/t_goods_m_sku_price_ml"
+                android:text="@string/iv_classify_item_favourable"
+                android:textColor="#fa0000"
+                android:background="@drawable/classify_item_bg"
+                android:textSize="@dimen/guess_like_item_tv_size"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/iv_classify_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/aqua"
+                android:text="¥1000" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

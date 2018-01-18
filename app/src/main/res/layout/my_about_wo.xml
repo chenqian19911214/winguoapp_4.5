@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/top_navi_help_about"/>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/about_we_ll_mt"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/about_we_im_w"
+            android:layout_height="@dimen/about_we_im_w"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/logo" />
+
+        <TextView
+            android:layout_marginTop="@dimen/about_we_tv_mt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="问果App"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/about_version"
+            android:layout_marginTop="@dimen/about_we_tv_mt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="V1.0.0.20161213"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/about_we_tv_mt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="www.winguo.com"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/about_we_permission_ll_mb"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/about_permission_illustrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/about_we_permission_ill_mt"
+            android:text="权限使用说明"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/about_user_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/about_we_permission_agree_mt"
+            android:text="用户使用协议"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/about_we_permission_copy_mt"
+            android:text="copyright 广东问果科技股份有限公司版权所有"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white1"
+    android:clipToPadding="true">
+
+    <!--<include layout="@layout/top_back_navi"/>-->
+
+    <FrameLayout
+        android:id="@+id/modify_pay_way_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/account_item_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/modify_pay_way_code_tip"
+            android:textSize="@dimen/person_item_textsize"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:src="@drawable/classify_arrows_right" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/modify_pay_way_old"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_split_line_h"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/account_item_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/modify_pay_way_old_tip"
+            android:textSize="@dimen/person_item_textsize"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:src="@drawable/classify_arrows_right" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提示：初始密码为登录密码！"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

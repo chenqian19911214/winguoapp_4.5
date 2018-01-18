@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="launcher_support_webshell_web_bg">#e0e0e0</color>
+    <color name="launcher_support_webshell_input_key_hint_color_theme">#a0a1a1</color>
+	<color name="launcher_support_webshell_input_key_text_color_theme">#000000</color>
+</resources>

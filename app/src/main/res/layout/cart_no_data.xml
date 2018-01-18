@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_cart_no_data"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/no_shopcar_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin_layout_right"
+        android:drawableTop="@drawable/cart_no_data"
+        android:gravity="center"
+        android:text="你的购物车空空如也"
+        android:textColor="@color/cart_shop_text_color"
+        android:textSize="@dimen/cart_no_data_size"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_layout_right"
+        android:gravity="center"
+        android:text="快来挑几件好东西吧!"
+        android:textColor="@color/cart_shop_text_color"
+        android:textSize="@dimen/cart_no_data_size"/>
+
+</LinearLayout>

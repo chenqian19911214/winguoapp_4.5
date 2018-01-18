@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/history_time"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/physical_address_receiver"
+            android:textColor="@color/_black_text_color"
+            android:textSize="@dimen/physical_userinfo_text_size" />
+
+        <EditText
+            android:id="@+id/physical_input_username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/physical_userinfo_hint_text"
+            android:textColorHint="@color/physical_userinfo_input_text"
+            android:textSize="@dimen/physical_userinfo_input_text_size" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_hight1"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/physical_userinfo_phone_text"
+            android:textColor="@color/_black_text_color"
+            android:textSize="@dimen/physical_userinfo_text_size" />
+
+        <EditText
+            android:id="@+id/physical_input_userphone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:inputType="phone"
+            android:background="@null"
+            android:hint="@string/physical_userinfo_phone_hint_text"
+            android:textColorHint="@color/physical_userinfo_input_text"
+            android:textSize="@dimen/physical_userinfo_input_text_size" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_physical_userinfo_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="dsfhskjfhskfskfsdfj"
+        android:textSize="@dimen/physical_userinfo_hint_size"
+        android:textColor="@color/pay_success_goods_price_color"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/physical_save_userinfo_btn"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="38dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/pay_success_blue_solid_btn"
+        android:gravity="center"
+        android:text="@string/physical_userinfo_btn_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/physical_userinfo_text_size" />
+
+</LinearLayout>

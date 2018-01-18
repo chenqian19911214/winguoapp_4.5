@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/mine_background"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+    >
+
+        <RelativeLayout
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:clickable="true">
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="@dimen/hybrid4_account_login_back_iv_w"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/hybrid4_account_login_back_iv_ml"
+                android:layout_marginTop="@dimen/hybrid4_account_login_back_iv_mt"
+                android:src="@drawable/winguo_app_login_back"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/address_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/address_manage_title"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/title"
+        />
+        <TextView
+            android:id="@+id/address_manage_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+        />
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/address_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

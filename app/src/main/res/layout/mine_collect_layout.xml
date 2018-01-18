@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_collect_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mine_wallect_contact_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/collect_goods_text"
+            android:textColor="@color/my_family_server_text_color"
+            android:textSize="@dimen/mine_wallect_text_size" />
+
+        <ImageView
+            android:id="@+id/jump_next1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jump_next_bg" />
+
+        <TextView
+            android:id="@+id/tv_collect_goods_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/wallect_text_margin_right"
+            android:layout_toLeftOf="@id/jump_next1"
+            android:textColor="@color/my_family_server_text_color"
+            android:textSize="@dimen/tv_wallect_text_size"
+            android:text="@string/collect_goods_count" />
+    </RelativeLayout>
+    <!--店铺-->
+    <RelativeLayout
+        android:id="@+id/rl_mine_collect_store"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mine_wallect_contact_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/collect_store"
+            android:textColor="@color/my_family_server_text_color"
+            android:textSize="@dimen/mine_wallect_text_size" />
+
+        <ImageView
+            android:id="@+id/jump_next2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jump_next_bg" />
+
+        <TextView
+            android:id="@+id/tv_collect_store_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/wallect_text_margin_right"
+            android:layout_toLeftOf="@id/jump_next2"
+            android:textColor="@color/my_family_server_text_color"
+            android:textSize="@dimen/tv_wallect_text_size"
+            android:text="@string/collect_store_count" />
+    </RelativeLayout>
+
+</LinearLayout>

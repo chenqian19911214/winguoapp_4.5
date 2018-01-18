@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_changed_goods_count"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/changes_goods_count_padding"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_text"
+            android:textSize="@dimen/changed_goods_count_cancel_size"
+            android:textColor="@color/negative_text_color1"/>
+        <TextView
+            android:id="@+id/tv_comfirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/comfirm_text"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/changed_goods_count_cancel_size"
+            android:textColor="@color/negative_text_color1"/>
+    </RelativeLayout>
+    <com.winguo.product.modle.productattribute.NumberAddSubView
+        android:id="@+id/changed_goods_count_addsub_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

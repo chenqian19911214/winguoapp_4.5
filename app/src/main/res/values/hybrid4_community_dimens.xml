@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- 
+    <dimen name="homepage_cover_height">220.0dip</dimen>
+    <dimen name="homepage_cover_panel_height">96.0dip</dimen>
+    <dimen name="homepage_cover_panel_padding">10.0dip</dimen>
+    <dimen name="homepage_cover_panel_bottom_padding">20.0dip</dimen>
+    <dimen name="homepage_cover_search_box_height">58.0dip</dimen>
+    <dimen name="homepage_cover_panel_item_width">64.0dip</dimen>
+    <dimen name="homepage_expand_accel">2000dp</dimen>
+    <dimen name="homepage_collapse_accel">2000dp</dimen>
+    <dimen name="dropdown_item_height">48.0dip</dimen>
+    
+    <dimen name="text_size_small">13.0dip</dimen>
+     -->
+     
+    <!-- 
+    (menu_tab_menus_panel_height+ menu_tab_search_box_height+ menu_tab_search_box_margin_top) <= menu_tab_height 
+    -->
+    <dimen name="menu_tab_height">150.0dip</dimen>
+    <dimen name="menu_tab_menus_panel_height">75.0dip</dimen>
+    <dimen name="menu_tab_account_panel_height">75.0dip</dimen>
+    <dimen name="menu_tab_account_panel_margin_top">0.0dip</dimen>
+    
+    <dimen name="menu_tab_item_height">75.0dip</dimen>
+    <dimen name="menu_tab_item_icon_bg_width">50.0dip</dimen>
+	<dimen name="menu_tab_item_icon_bg_height">50.0dip</dimen> 
+	<dimen name="menu_tab_item_icon_width">35.0dip</dimen>
+	<dimen name="menu_tab_item_icon_height">35.0dip</dimen>
+	<dimen name="menu_tab_item_text_height">24.0dip</dimen>
+	
+	<dimen name="menu_tab_menus_panel_padding">6.0dip</dimen>
+	<dimen name="menu_tab_menus_panel_item_width">65.0dip</dimen>
+	<dimen name="text_size_small">13.0dip</dimen>
+	
+</resources>

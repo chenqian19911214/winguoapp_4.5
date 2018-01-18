@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white1">
+
+    <TextView
+        android:id="@+id/cart_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="已选商品"
+        android:textSize="20sp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:background="@color/wh"
+        android:drawableLeft="@drawable/nearby_store_home_title_left_ic"
+        android:gravity="left"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/nearby_store_home_cart_pop_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dp"
+        android:layout_below="@id/cart_title">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nearby_store_home_cart_pop_rv">
+        <include
+            android:id="@+id/nearby_home_bt_cart_view"
+            layout="@layout/nearby_store_home_cart"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            />
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:padding="@dimen/product_screen_padding">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/screen_title_margin_top"
+                android:gravity="center_horizontal"
+                android:text="@string/product_screen_title_text"
+                android:textColor="@color/product_screen_title_text_color"
+                android:textSize="@dimen/product_screen_title_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/product_screen_large_margin_top"
+                    android:text="@string/product_screen_price_text"
+                    android:textColor="@color/product_screen_title_text_color"
+                    android:textSize="@dimen/product_screen_price_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/product_screen_small_margin_top"
+                    android:gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/et_low_price"
+                        android:layout_width="@dimen/edit_text_price_width"
+                        android:layout_height="@dimen/edit_text_price_hight"
+                        android:background="@drawable/edit_text_bg"
+                        android:digits="1234567890"
+                        android:gravity="center"
+                        android:hint="@string/product_screen_low_price_text"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:textColor="@color/product_screen_title_text_color"
+                        android:textColorHint="@color/screen_price_hint_text"
+                        android:textSize="@dimen/product_screen_price_size" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cutting_line_margin_left"
+                        android:layout_marginRight="@dimen/cutting_line_margin_left"
+                        android:layout_weight="1"
+                        android:src="@drawable/small_line" />
+
+                    <EditText
+                        android:id="@+id/et_hight_price"
+                        android:layout_width="@dimen/edit_text_price_width"
+                        android:layout_height="@dimen/edit_text_price_hight"
+                        android:background="@drawable/edit_text_bg"
+                        android:digits="1234567890"
+                        android:gravity="center"
+                        android:hint="@string/product_screen_hight_price_text"
+                        android:maxLength="11"
+                        android:maxLines="1"
+                        android:textColor="@color/product_screen_edit_text_color"
+                        android:textColorHint="@color/screen_price_hint_text"
+                        android:textSize="@dimen/product_screen_price_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/product_screen_large_margin_top"
+                    android:text="@string/product_screen_location_text"
+                    android:textColor="@color/product_screen_title_text_color"
+                    android:textSize="@dimen/product_screen_price_text_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/product_screen_small_margin_top"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_product_screen_province"
+                        android:layout_width="@dimen/text_view_location_width"
+                        android:layout_height="@dimen/text_view_location_hight"
+                        android:background="@drawable/edit_text_bg"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/product_screen_title_text_color"
+                        android:textSize="@dimen/product_screen_price_size" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/cutting_line_margin_left"
+                        android:layout_marginRight="@dimen/cutting_line_margin_left"
+                        android:layout_weight="1"
+                        android:src="@drawable/small_line" />
+
+                    <TextView
+                        android:id="@+id/tv_product_screen_city"
+                        android:layout_width="@dimen/text_view_location_width"
+                        android:layout_height="@dimen/text_view_location_hight"
+                        android:background="@drawable/edit_text_bg"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/product_screen_edit_text_color"
+                        android:textSize="@dimen/product_screen_price_size" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/product_screen_large_margin_top"
+                    android:text="@string/product_screen_classify_text"
+                    android:textColor="@color/product_screen_title_text_color"
+                    android:textSize="@dimen/product_screen_price_text_size" />
+
+                <com.winguo.view.CustomGridView
+                    android:id="@+id/product_screen_grid_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/product_screen_small_margin_top"
+                    android:horizontalSpacing="@dimen/product_screen_classify_margin_left"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="2"
+                    android:verticalSpacing="@dimen/product_screen_classify_margin_top" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_screen_reset_btn"
+            android:layout_width="@dimen/text_view_location_width"
+            android:layout_height="@dimen/text_view_location_hight"
+            android:background="@drawable/pay_success_blue_btn"
+            android:gravity="center"
+            android:text="@string/tv_screen_reset_btn"
+            android:textColor="@color/product_screen_title_text_color"
+            android:textSize="@dimen/tv_screen_reset_text_size" />
+
+        <TextView
+            android:id="@+id/tv_screen_confirm_btn"
+            android:layout_width="@dimen/text_view_location_width"
+            android:layout_height="@dimen/text_view_location_hight"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pay_success_blue_solid_btn"
+            android:gravity="center"
+            android:text="@string/tv_screen_confirm_btn"
+            android:textColor="@color/tv_screen_confirm_text_color"
+            android:textSize="@dimen/tv_screen_reset_text_size" />
+    </RelativeLayout>
+</RelativeLayout>

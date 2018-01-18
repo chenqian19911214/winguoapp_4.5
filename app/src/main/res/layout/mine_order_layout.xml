@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_mine_all_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mine_wallect_contact_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/search_all_order"
+            android:textColor="@color/my_family_server_text_color"
+            android:textSize="@dimen/mine_wallect_text_size" />
+
+        <ImageView
+            android:id="@+id/jump_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/jump_next_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mine_order_contact_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_wait_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/mine_order_wait_pay_padding"
+                android:paddingLeft="@dimen/mine_order_wait_pay_padding"
+                android:paddingRight="@dimen/mine_order_wait_pay_padding_right"
+                android:paddingTop="@dimen/mine_order_wait_pay_padding"
+                android:text="待付款"
+                android:textColor="@color/my_family_server_text_color"
+                android:textSize="@dimen/order_wait_pay_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_wait_deliver_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/mine_order_wait_pay_padding"
+                android:paddingLeft="@dimen/mine_order_wait_pay_padding"
+                android:paddingRight="@dimen/mine_order_wait_pay_padding_right"
+                android:paddingTop="@dimen/mine_order_wait_pay_padding"
+                android:text="待发货"
+                android:textColor="@color/my_family_server_text_color"
+                android:textSize="@dimen/order_wait_pay_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_wait_take_deliver_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/mine_order_wait_pay_padding"
+                android:paddingLeft="@dimen/mine_order_wait_pay_padding"
+                android:paddingRight="@dimen/mine_order_wait_pay_padding_right"
+                android:paddingTop="@dimen/mine_order_wait_pay_padding"
+                android:text="待收货"
+                android:textColor="@color/my_family_server_text_color"
+                android:textSize="@dimen/order_wait_pay_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_wait_evaluate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/mine_order_wait_pay_padding"
+                android:paddingLeft="@dimen/mine_order_wait_pay_padding"
+                android:paddingRight="@dimen/mine_order_wait_pay_padding_right"
+                android:paddingTop="@dimen/mine_order_wait_pay_padding"
+                android:text="待评价"
+                android:textColor="@color/my_family_server_text_color"
+                android:textSize="@dimen/order_wait_pay_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

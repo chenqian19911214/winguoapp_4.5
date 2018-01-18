@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/account_login_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/account_login_container_mt"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/account_login_user_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_pw_ll_ml"
+            android:layout_marginRight="@dimen/login_pw_ll_ml"
+            android:background="@null"
+            android:hint="@string/hybrid4_account_register_prompt_name"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:padding="20dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:theme="@style/MyEditText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/login_pw_ll_ml"
+            android:layout_marginRight="@dimen/login_pw_ll_ml"
+            android:background="@color/white1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/login_pw_ll_ml"
+            android:layout_marginRight="@dimen/login_pw_ll_ml"
+            android:layout_marginTop="@dimen/winguo_login_ll_pw_mt"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/account_login_send_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/account_register_send_code"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:padding="20dp"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:theme="@style/MyEditText" />
+
+                <TextView
+                    android:id="@+id/account_login_gainedcode_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:hint="@string/account_register_gainedcode_tv"
+                    android:padding="10dp" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/account_login_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginRight="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginTop="@dimen/winguo_account_login_button_mt"
+            android:background="@drawable/pay_success_blue_solid_btn"
+            android:gravity="center"
+            android:text="@string/hybrid4_account_login"
+            android:textColor="@color/wh"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/acccount_weixin_login_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginRight="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginTop="@dimen/winguo_account_register_rl_mt"
+            android:background="@drawable/pay_success_blue_btn"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ssdk_oks_classic_wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/account_weixin_login_tv"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginRight="@dimen/winguo_login_ll_account_ml"
+            android:layout_marginTop="@dimen/winguo_account_register_rl_mt"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/account_register_tip"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/account_register_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/account_register_tv"
+                android:textColor="@color/title_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

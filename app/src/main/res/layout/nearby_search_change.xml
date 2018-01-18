@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nearby_search_change_bg"
+        android:orientation="vertical"
+    >
+        <TextView
+            android:id="@+id/nearby_search_change_goods_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@drawable/nearby_search_change_goods"
+            android:drawablePadding="10dp"
+            android:paddingTop="35dp"
+            android:text="商品"
+            android:textColor="#333333"
+            android:textSize="16sp"
+        />
+        <TextView
+            android:id="@+id/nearby_search_change_shop_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/nearby_search_change_shop"
+            android:drawablePadding="10dp"
+            android:text="店铺"
+            android:textColor="#333333"
+            android:textSize="16sp"
+        />
+    </LinearLayout>
+</LinearLayout>

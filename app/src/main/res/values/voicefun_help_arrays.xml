@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="help_detail_mic">
+        <item>中央电视台</item>
+        <item>中国银行</item>
+        <item>广州市社保局</item>
+        <item>新华社</item>
+        <item>人民日报</item>
+        <item>搜狐体育</item>
+        <item>新浪新闻</item>
+        <item>交通银行</item>
+        <item>中山大学</item>
+        <item>广东省网上办事大厅</item>
+        <item>问果商城 </item>
+    </string-array>
+    
+    <string-array name="help_detail_eat">
+        <item>我要吃饭</item>
+        <item>附近的酒店</item>
+        <item>停车场在什么地方</item>
+        <item>我很想找电影院</item>
+        <item>附近的医院</item>
+        <item>附近哪里有加油的地方</item>
+        <item>银行在哪里</item>
+        <item>给我找取款机</item>
+        <item>我想去洗手间</item>
+        <item>网吧在哪里</item>
+    </string-array>
+    
+    <string-array name="help_detail_call">
+        <item>打电话给#1</item>
+        <item>给#2拨号</item>
+        <item>接通#3</item>
+        <item>给#2打电话</item>
+        <item>和#1通话</item>
+        <item>跟#3联系</item>
+        <item>接通186000</item>
+    </string-array>
+    
+    <string-array name="help_detail_defualt_names">
+        <item>张三</item>
+        <item>李四</item>
+        <item>王五</item>
+    </string-array>
+    
+    <string-array name="help_detail_sms">
+        <item>发一条短信给#2</item>
+        <item>把#1的号码发给#2和#3</item>
+        <item>告诉#2我今晚不回去了</item>
+        <item>告诉#2和#1对他们讲我今晚有事</item>
+        <item>发送一个信息给#2说祝你生日快乐</item>
+        <item>给#2和#3发#1的电话号码</item>
+        <item>把138000发给#2说晚上才能打</item>
+        <item>#2的电话发送给#3</item>
+        <item>发一首诗给#1对他说欲穷千里目更上一层楼</item>
+    </string-array>
+    
+    <string-array name="help_detail_share">
+        <item>发送桌面给#2和#3</item>
+        <item>分享我的网店给#2</item>
+        <item>告诉#1我的网店很好用</item>
+        <item>给#2发送桌面</item>
+        <item>把桌面分享给#1</item>
+        <item>将我的网店分享给#2跟他说你也来试试吧</item>
+    </string-array>
+
+</resources>

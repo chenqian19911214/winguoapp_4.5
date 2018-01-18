@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wh">
+
+    <TextView
+        android:id="@+id/gender_chioce_men"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gender_chioce_men_h"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:layout_margin="5dp"
+        android:text="@string/gender_chioce_men"/>
+
+    <TextView
+        android:id="@+id/gender_chioce_women"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gender_chioce_women_h"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:layout_margin="5dp"
+        android:text="@string/gender_chioce_women"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textColor"/>
+    <TextView
+        android:id="@+id/phone_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/phone_cancel_h"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:layout_margin="5dp"
+        android:text="@string/phone_cancel"/>
+
+</LinearLayout>

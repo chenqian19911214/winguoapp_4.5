@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/wh"
+    android:gravity="center">
+    <ImageView
+        android:id="@+id/iv_classify_item_ic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="17dp"
+        android:paddingRight="17dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/iv_classify_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXXXXXXXXXXXXXXXXXXXXXXXX"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/black"/>
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginBottom="10dp">
+
+           <ImageView
+               android:id="@+id/iv_classify_item_cash_use"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentRight="true"
+               android:layout_centerVertical="true"
+               android:src="@drawable/product_cash_use_ic"
+               android:visibility="gone"/>
+
+           <ImageView
+               android:id="@+id/iv_classify_item_self_run"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginRight="5dp"
+               android:layout_centerVertical="true"
+               android:text="@string/iv_classify_item_favourable"
+               android:layout_toLeftOf="@id/iv_classify_item_cash_use"
+               android:src="@drawable/product_self_run_ic"
+               android:visibility="gone"/>
+
+           <TextView
+               android:id="@+id/iv_classify_item_price"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="@dimen/t_goods_m_sku_price_ml"
+               android:textColor="#d33a31"
+               android:textSize="14sp"
+               android:text="¥1000" />
+
+       </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

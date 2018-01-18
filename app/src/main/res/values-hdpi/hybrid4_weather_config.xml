@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weather_widget_text_size_2x2">11sp</dimen>
+    <dimen name="weather_information_page_item_text_size">11.5sp</dimen>
+	<dimen name="weather_information_future_item_text_size">8.5sp</dimen>
+	<dimen name="weather_head_text_size">16.5sp</dimen>
+</resources>

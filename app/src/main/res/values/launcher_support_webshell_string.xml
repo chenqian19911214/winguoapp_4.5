@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="launcher_support_webshell_gb_back">退出</string>
+    <string name="launcher_support_webshell_refresh">刷新</string>
+    <string name="launcher_support_webshell_hintext">搜索或输入网址</string>
+      
+    <string name="launcher_support_webshell_network_fail">网络连接失败 ,请检查网络连接</string>
+    <string name="launcher_support_webshell_unsupport_func">不支持该功能</string>
+    <string name="launcher_support_webshell_timeout">等待响应超时,请检查网络连接</string>
+    
+    <string name="launcher_support_webshell_file_chooser_title">请选择要上传的文件</string>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wh" >
+
+    <RelativeLayout
+        android:id="@+id/hybrid4_account_ac_back"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:clickable="true" >
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/left_back_btn" />
+ <!-- AE6UTFSHGPA -->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hybrid4_account_ac_back_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/hybrid4_account_ac_back"
+        android:textColor="@color/title_text_color"
+        android:textSize="18sp" >
+    </TextView>
+
+    <ImageView
+        android:id="@+id/hybrid4_account_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/hybrid4_account_menu_drawable" 
+        android:visibility="gone"/>
+
+</RelativeLayout>

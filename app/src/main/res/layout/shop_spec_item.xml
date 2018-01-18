@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/shop_spec_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:button="@null"
+        android:checked="false"
+        android:background="@drawable/shop_spec_selector"
+        android:textSize="@dimen/shop_spec_name_size"
+        android:textColor="@drawable/shop_spec_text_color_selector" />
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white1"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/top_back_navi"/>-->
+
+    <!--绑定手机号-->
+    <FrameLayout
+        android:id="@+id/safe_center_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/account_item_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/set_center_phone_tip"
+            android:textSize="@dimen/person_item_textsize" />
+
+        <TextView
+            android:id="@+id/safe_center_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:drawablePadding="@dimen/account_safe_right_drawablepadding"
+            android:drawableRight="@drawable/classify_arrows_right"
+            android:text="@string/safe_center_phone_bind"
+            android:textSize="@dimen/person_item_textsize" />
+
+    </FrameLayout>
+    <!--登录密码-->
+    <FrameLayout
+        android:id="@+id/safe_center_account_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_split_line_h"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/account_item_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/set_center_account_pwd_tip"
+            android:textSize="@dimen/person_item_textsize" />
+
+        <TextView
+            android:id="@+id/safe_center_account_pwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:drawablePadding="@dimen/account_safe_right_drawablepadding"
+            android:drawableRight="@drawable/classify_arrows_right"
+            android:text="@string/set_center_account_pwd"
+            android:textSize="@dimen/person_item_textsize" />
+    </FrameLayout>
+
+    <!--支付密码-->
+    <FrameLayout
+        android:id="@+id/safe_center_pay_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_split_line_h"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/account_item_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/set_center_pay_pwd_tip"
+            android:textSize="@dimen/person_item_textsize" />
+
+        <TextView
+            android:id="@+id/safe_center_pay_pwd_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:drawablePadding="@dimen/account_safe_right_drawablepadding"
+            android:drawableRight="@drawable/classify_arrows_right"
+            android:text="@string/set_center_account_pwd"
+            android:textSize="@dimen/person_item_textsize" />
+    </FrameLayout>
+
+    <!--身份认证-->
+    <FrameLayout
+        android:id="@+id/safe_center_identity_authentication"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_split_line_h"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/user_head_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/safe_center_identity_authentication_tip"
+            android:textSize="@dimen/person_item_textsize" />
+
+        <TextView
+            android:id="@+id/safe_center_identity_authentication_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:drawablePadding="@dimen/account_safe_right_drawablepadding"
+            android:drawableRight="@drawable/classify_arrows_right"
+            android:text="未认证"
+            android:textSize="@dimen/person_item_textsize" />
+
+    </FrameLayout>
+
+    <!--账号绑定-->
+    <FrameLayout
+        android:id="@+id/safe_center_account_bind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_split_line_h"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/user_head_padding"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/set_center_account_bind_tip"
+            android:textSize="@dimen/person_item_textsize" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:drawableRight="@drawable/classify_arrows_right"
+            android:textSize="@dimen/person_item_textsize" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+    <!--顶部栏-->
+    <RelativeLayout
+        android:id="@+id/winguo_login_top_view"
+        style="@style/top_property"
+        android:background="@color/wh">
+
+        <RelativeLayout
+            android:id="@+id/hybrid4_account_login_back"
+            android:layout_width="@dimen/hybrid4_account_login_back_w"
+            android:layout_height="@dimen/hybrid4_account_login_back_h"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/hybrid4_account_login_back_ml"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="@dimen/hybrid4_account_login_back_iv_w"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/hybrid4_account_login_back_iv_ml"
+                android:layout_marginTop="@dimen/hybrid4_account_login_back_iv_mt"
+                android:src="@drawable/winguo_app_login_back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/hybrid4_account_login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/login_title_st"
+            android:textColor="#404040"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"/>
+    <!-- 标题 -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/winguo_login_tl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMaxWidth="0dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:background="@color/wh"
+        app:tabIndicatorColor="@color/title_color"
+        app:tabSelectedTextColor="@color/black">
+
+    </android.support.design.widget.TabLayout>
+    <!--内容区-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/winguo_login_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

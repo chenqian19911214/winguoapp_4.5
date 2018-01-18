@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_color">
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/ll_product_table"-->
+    <!--style="@style/table_bar"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+    <!--<FrameLayout-->
+    <!--android:id="@+id/pay_success_back_btn"-->
+    <!--android:layout_width="@dimen/back_container_width"-->
+    <!--android:layout_height="match_parent"-->
+    <!--&gt;-->
+    <!--<ImageView-->
+    <!--style="@style/back_btn"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/back2" />-->
+    <!--</FrameLayout>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/product_screen_btn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="@string/pay_success_text"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:textColor="@color/product_screen_title_text_color"-->
+    <!--android:textSize="@dimen/tv_product_list_price2_size" />-->
+    <!--</RelativeLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/title_color"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/product_screen_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/pay_success_icon_margin_top"
+                    android:gravity="center"
+                    android:text="@string/pay_success_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/tv_product_list_price2_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/pay_success_icon_margin_bottom"
+                    android:layout_marginTop="@dimen/pay_success_icon_margin_top"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/pay_success_icon_width"
+                        android:layout_height="@dimen/pay_success_icon_width"
+                        android:layout_marginLeft="@dimen/pay_success_icon_margin_left"
+                        android:src="@drawable/pay_success" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/pay_success_top_text_margin_left"
+                        android:text="@string/pay_success_hint_text"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/pay_success_text_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pay_success_address_margin_top"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_physical_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/physical_pay_success_address_padding">
+
+                    <TextView
+                        android:id="@+id/physical_pay_success_consignee_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:text="@string/pay_result_consignee_text"
+                        android:textColor="@color/pay_result_receiver_address_text_color"
+                        android:textSize="@dimen/pay_success_address_text_size" />
+
+                    <TextView
+                        android:id="@+id/physical_pay_success_consignee_phone_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/pay_result_receiver_address_text_color"
+                        android:textSize="@dimen/pay_success_address_text_size" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_store_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/address_icon_paddingleft_top">
+
+                    <ImageView
+                        android:layout_width="@dimen/pay_success_address_icon_width"
+                        android:layout_height="@dimen/pay_success_address_icon_width"
+                        android:src="@drawable/address_icon" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/pay_success_address_padding"
+                            android:paddingRight="@dimen/pay_success_address_padding"
+                            android:paddingTop="@dimen/pay_success_address_padding">
+
+                            <TextView
+                                android:id="@+id/pay_success_consignee_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:text="@string/pay_result_consignee_text"
+                                android:textColor="@color/pay_result_receiver_address_text_color"
+                                android:textSize="@dimen/pay_success_address_text_size" />
+
+                            <TextView
+                                android:id="@+id/pay_success_consignee_phone_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:textColor="@color/pay_result_receiver_address_text_color"
+                                android:textSize="@dimen/pay_success_address_text_size" />
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/pay_success_consignee_address_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/pay_success_address_padding"
+                            android:paddingLeft="@dimen/pay_success_address_padding"
+                            android:paddingRight="@dimen/pay_success_address_padding"
+                            android:paddingTop="@dimen/pay_success_address_padding_top"
+                            android:text="@string/pay_result_receiver_address_text"
+                            android:textColor="@color/pay_result_receiver_address_text_color"
+                            android:textSize="@dimen/pay_success_address_text_size" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pay_success_goods_info_margin"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/pay_success_goods_info_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_success_address_padding"
+                    android:text="@string/pay_result_order_title_text"
+                    android:textColor="@color/pay_result_hint_text_color"
+                    android:textSize="@dimen/pay_success_text_size" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_line"
+                    android:background="@drawable/hidden_line"
+                    android:paddingLeft="@dimen/pay_success_address_padding"
+                    android:paddingRight="@dimen/pay_success_address_padding" />
+
+                <com.winguo.view.InterListView
+                    android:id="@+id/lv_pay_sucess"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_success_address_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pay_success_goods_price_text"
+                        android:textColor="@color/pay_result_hint_text_color"
+                        android:textSize="@dimen/pay_success_address_text_size" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_success_goods_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text=""
+                        android:textColor="@color/pay_success_goods_price_color"
+                        android:textSize="@dimen/pay_success_text_size" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/pay_success_btn_margin_bottom"
+                android:layout_marginLeft="@dimen/pay_success_btn_margin"
+                android:layout_marginRight="@dimen/pay_success_btn_margin"
+                android:layout_marginTop="@dimen/pay_success_btn_margin">
+
+                <TextView
+                    android:id="@+id/check_order_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="44dp"
+                    android:background="@drawable/pay_success_blue_btn"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/check_order_text"
+                    android:textColor="@color/title_color"
+                    android:textSize="@dimen/shopping_again_text_size" />
+
+                <TextView
+                    android:id="@+id/shopping_again_btn"
+                    android:layout_width="150dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/pay_success_blue_solid_btn"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/shopping_again_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/shopping_again_text_size" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/iv_bottom_voice_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bottom_voice" />
+</RelativeLayout>

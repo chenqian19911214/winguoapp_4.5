@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/WebShell_MASTER_searchbar_main_form"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/launcher_support_webshell_web_bg"
+    android:orientation="vertical"
+    android:weightSum="1.0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="45dp">
+
+            <RelativeLayout
+                android:id="@+id/WebShell_MASTER_back_layout"
+                android:layout_width="80dp"
+                android:layout_height="45dp">
+
+                <ImageView
+                    android:id="@+id/WebShell_MASTER_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/left_back_btn" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/WebShell_MASTER_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="85dp"
+                android:layout_toRightOf="@id/WebShell_MASTER_back_layout"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grays" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/WebShell_MASTER_loading_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@null"
+        android:focusableInTouchMode="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/launcher_support_webshell_progress_drawable_theme" />
+
+    <FrameLayout
+        android:id="@+id/webshell_webview_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grays" />
+
+        <RelativeLayout
+            android:id="@+id/WebShell_MASTER_last_link_layout"
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:id="@+id/WebShell_MASTER_last_link"
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/launcher_support_webshell_last_link_no_click" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/WebShell_MASTER_pad"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/WebShell_MASTER_last_link_layout" />
+
+        <RelativeLayout
+            android:id="@+id/WebShell_MASTER_next_link_layout"
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/WebShell_MASTER_pad">
+
+            <ImageView
+                android:id="@+id/WebShell_MASTER_next_link"
+                android:layout_width="18dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/launcher_support_webshell_next_link_no_click" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/WebShell_MASTER_refresh"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/winguo_home_news_refresh" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

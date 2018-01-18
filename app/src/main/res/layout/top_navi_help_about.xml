@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fragment_home_top_height"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/top_back_about"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/top_back_image_w"
+            android:layout_height="@dimen/top_back_image_h"
+            android:layout_marginLeft="@dimen/top_back_marginLeft"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/left_back_btn"/>
+        <TextView
+            android:id="@+id/top_layout_title_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/top_back_marginLeft"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:textColor="@color/title_text_color"
+            android:text="title"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/top_user_feedback_about"
+        android:layout_width="@dimen/top_feedback_image_w"
+        android:layout_height="@dimen/top_feedback_image_h"
+        android:layout_gravity="center_vertical|right"
+        android:layout_marginRight="@dimen/top_feedback_marginRight"
+        android:src="@drawable/winguo_feedback_icon" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_parting_line"
+        android:layout_gravity="bottom"
+        android:background="@color/white1"/>
+</FrameLayout>

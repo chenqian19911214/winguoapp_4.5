@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/cart_mt"
+        android:orientation="horizontal"
+        android:background="@color/transparent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/nearby_store_home_price_bg">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/nearby_store_home_bt_price_size" />
+            <TextView
+                android:id="@+id/nearby_store_home_bt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="0.00"
+                android:gravity="center"
+                android:textSize="@dimen/nearby_store_home_bt_price_size"
+                android:textColor="#ff0000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nearby_store_home_bt_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="结算"
+            android:gravity="center"
+            android:textColor="@color/wh"
+            android:textSize="@dimen/nearby_store_home_bt_pay_size"
+            android:background="@drawable/nearby_store_home_pay_bg" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/nearby_store_home_cart_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/nearby_store_home_cart_fl_ml">
+        <TextView
+            android:id="@+id/nearby_store_home_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nearby_store_home_bt_cart"/>
+        <TextView
+            android:id="@+id/nearby_store_home_cart_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textSize="@dimen/nearby_store_home_cart_number_size"
+            android:textColor="@color/wh"
+            android:background="@drawable/winguo_nearby_home_cart_tip"/>
+
+    </FrameLayout>
+
+
+</FrameLayout>

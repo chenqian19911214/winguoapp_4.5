@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_back_navi" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mywallet_bank_card_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mywallet_bank_card_rv_ml"
+        android:layout_marginRight="@dimen/mywallet_bank_card_rv_ml"
+        android:layout_marginTop="@dimen/mywallet_bank_card_rv_mt">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

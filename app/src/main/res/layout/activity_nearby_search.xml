@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/nearby_search_bar"/>
+    <LinearLayout
+        android:id="@+id/nearby_search_history_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="搜索历史"
+                android:textColor="#404040"
+                android:textSize="13sp"
+            />
+            <TextView
+                android:id="@+id/nearby_delete_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="15dp"
+                android:text="删除"
+                android:textColor="#404040"
+                android:textSize="13sp"
+            />
+        </RelativeLayout>
+        <com.winguo.flowlayout.TagFlowLayout
+            android:id="@+id/flowlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/id_flowlayout_ml"
+            android:layout_marginRight="@dimen/id_flowlayout_ml"
+            zhy:max_select="-1">
+        </com.winguo.flowlayout.TagFlowLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/nearby_search_seek_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ListView
+            android:id="@+id/nearby_search_history_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#C0C0C0"
+            android:dividerHeight="0.5dp"
+            android:scrollbars="none"/>
+
+    </LinearLayout>
+</LinearLayout>

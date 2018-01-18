@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="voicefun_prompt_init_failed">初始化失败</string>
+    <string name="voicefun_prompt_speak_prepare">你想要什么？\n一问有结果</string>
+    <string name="voicefun_prompt_speaking">请开始说话</string>
+    
+    <string name="voicefun_prompt_no_speech">你说什么，我没听清...</string>
+    <string name="voicefun_prompt_no_net">找不到网络哦</string>
+    <string name="voicefun_error_INVALID_RESULT">无有效的结果</string>
+    <string name="voicefun_error_NO_MATCH">无匹配结果</string>
+    <string name="voicefun_error_AUDIO_RECORD">录音失败</string>
+    <string name="voicefun_error_SPEECH_TIMEOUT">音频输入超时</string>
+    <string name="voicefun_error_EMPTY_UTTERANCE">无效的文本输入</string>
+    <string name="voicefun_error_MEMORY_WRANING">内存不足</string>
+    <string name="voicefun_error_UNKNOWN">未知错误</string>
+    <string name="voicefun_error_VERSION_LOWER">版本过低</string>
+    <string name="voicefun_error_LOCAL_NO_INIT">本地引擎未初始化</string>
+    <string name="voicefun_error_ENGINE_INIT_FAIL">初始化失败</string>
+    <string name="voicefun_error_NO_SPPECH">未检测到语音</string>
+    <string name="voicefun_prompt_net_exception">网络出问题了</string>
+    <string name="voicefun_prompt_net_time_out">网络不给力</string>
+    <string name="voicefun_prompt_net_timeout">网络连接超时，请检查网络！</string>
+    <string name="voicefun_prompt_no_speech_comin">不知道说什么好，进来看看吧</string>
+    <string name="voicefun_prompt_cannot_listen">您说什么我听不清</string>
+    <string name="voicefun_prompt_teach_des">有新功能哦</string>
+    
+    <string name="voicefun_prompt_network_abnormal">网络异常</string>
+    
+    <string name="voicefun_prompt_recognizing">正在识别</string>
+    <string name="voicefun_prompt_send_over">发送完毕</string>
+    
+    <string name="voicefun_prompt_input_content">请输入内容</string>
+    <string name="voicefun_prompt_choose_contact">请选择联系人</string>
+    
+    <string name="voicefun_prompt_cannot_find_contact">"找不到联系人："</string>
+    <string name="voicefun_prompt_contact_no_number">"联系人%1$s没有电话号码"</string>
+    <string name="voicefun_prompt_handling">正在为您处理，请稍候...</string>
+    <string name="voicefun_prompt_calling">正在为您呼叫</string>
+    
+    <string name="voicefun_info_dial">拨号</string>
+    <string name="voicefun_text_go_dial">去拨号界面</string>
+    
+    <string name="voicefun_text_speak_again">再说一次</string>
+    <string name="voicefun_text_speak_over">说完了</string>
+    <string name="voicefun_text_cancel">取消</string>
+    <string name="voicefun_text_send">发送</string>
+    <string name="voicefun_text_call">拨号</string>
+    <string name="voicefun_text_sending">正在发送</string>
+    <string name="voicefun_text_back">返回</string>
+    
+    <string name="voicefun_text_original">音译：</string>
+    
+    <string name="voicefun_text_send_successed">发送成功</string>
+    <string name="voicefun_text_send_failed">发送失败</string>
+    <string name="voicefun_text_send_waiting">等待发送</string>
+    
+    <string name="voicefun_text_backwards_cancel">"%1$s秒后开始发送\n取消"</string>
+    <string name="voicefun_text_call_backwards_cancel">"%1$s秒后开始拨号\n取消"</string>
+    <string name="voicefun_text_sending_cancel">"正在发送%1$s\n取消"</string>
+
+    <string name="voicefun_text_send_over">"发送完毕，%1$s秒返回\n返回"</string>
+    
+    <string name="voicefun_text_comefrom">"【来自问果语音助手】"</string>
+    
+    <string name="voicefun_sendmsg_title">短信发送</string>
+    <string name="voicefun_call_title">拨打电话</string>
+    
+    <string name="text_upload_contacts">上传联系人</string>
+    <string name="text_upload_success">上传成功</string>
+    
+    
+    <string-array name="voicefun_operators">
+	    <item>移动</item>
+	    <item>联通</item>
+	    <item>电信</item>
+	</string-array>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F2F2F2"
+              android:orientation="horizontal">
+
+    <com.winguo.mine.order.detail.delivery.view.CustomNodeLineView
+        android:id="@+id/nodeLineView"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="#F2F2F2"
+        custom:itemPaddingTop="10dp"
+        custom:otherNodeRadius="5dp"/>
+
+    <com.winguo.mine.order.detail.delivery.view.CustomListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#F2F2F2"
+        android:cacheColorHint="#000000"
+        android:divider="#D8D8D8"
+        android:dividerHeight="0.5dp"/>
+
+</LinearLayout>

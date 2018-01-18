@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="@color/white1"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/top_back_navi"/>
+
+    <LinearLayout
+        android:id="@+id/withdraw_cash_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/wh"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到账银行卡"/>
+
+            <Spinner
+                android:id="@+id/balance_withdraw_cash_spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:layout_weight="2"></Spinner>
+
+            <ImageView
+                android:id="@+id/balance_withdraw_cash_add_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/my_bank_card_add"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="提现金额"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/balance_withdraw_cash_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="¥"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:background="@null"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/MyEditText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+        <TextView
+            android:id="@+id/balance_cash_now"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/balance_cash_now"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white1">
+            <TextView
+                android:id="@+id/balance_withdraw_cash_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/mywallet_balance_manager_recharge_ml"
+                android:layout_marginRight="@dimen/mywallet_balance_manager_recharge_ml"
+                android:layout_marginTop="@dimen/mywallet_balance_manager_recharge_mt"
+                android:background="@drawable/button_submit_selector1"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="提 交"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

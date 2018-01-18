@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zhy="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/search_history_fl_p">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/search_history_title_ml"
+            android:text="@string/search_history_title"
+            android:textColor="@color/black1"
+            android:textSize="@dimen/search_history_title_size"/>
+        <ImageView
+            android:id="@+id/search_history_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/search_history_clear_mr"
+            android:src="@drawable/winguo_search_history_clear"
+            android:text="@string/search_history_clear"
+            android:textColor="@color/textColor"/>
+    </FrameLayout>
+
+    <com.winguo.flowlayout.TagFlowLayout
+        android:id="@+id/id_flowlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/id_flowlayout_ml"
+        android:layout_marginRight="@dimen/id_flowlayout_ml"
+        zhy:max_select="-1">
+    </com.winguo.flowlayout.TagFlowLayout>
+
+</LinearLayout>

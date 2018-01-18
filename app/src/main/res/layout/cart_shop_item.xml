@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/history_time" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/wh"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical">
+        <FrameLayout
+            android:id="@+id/fl_cart_shop_selected_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            >
+
+        <CheckBox
+            android:id="@+id/cart_shop_selected_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shop_selecter"
+            android:button="@null" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/tv_cart_shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/back_hight"
+            android:layout_toRightOf="@id/fl_cart_shop_selected_btn"
+            android:text="时尚潮流旗舰店"
+            android:textColor="@color/cart_shop_text_color"
+            android:textSize="@dimen/dialog_text_size" />
+
+        <TextView
+            android:id="@+id/physical_style_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/physical_style_text"
+            android:textColor="@color/cart_shop_text_color"
+            android:textSize="@dimen/physical_style_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_hight1"
+        android:background="@drawable/line" />
+
+</LinearLayout>
+

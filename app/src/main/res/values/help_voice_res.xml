@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--帮助问法 资源数据-->
+    <string-array name="help_voice_tel">
+        <item>@string/help_voice_tel1</item>
+        <item>@string/help_voice_tel2</item>
+        <item>@string/help_voice_tel3</item>
+    </string-array>
+
+    <string-array name="help_voice_message">
+        <item>@string/help_voice_message1</item>
+        <item>@string/help_voice_message2</item>
+    </string-array>
+
+    <string-array name="help_voice_app">
+        <item>@string/help_voice_app1</item>
+        <item>@string/help_voice_app2</item>
+    </string-array>
+
+    <string-array name="help_voice_to">
+        <item>@string/help_voice_to1</item>
+        <item>@string/help_voice_to2</item>
+        <item>@string/help_voice_to3</item>
+        <item>@string/help_voice_to4</item>
+        <item>@string/help_voice_to5</item>
+        <item>@string/help_voice_to6</item>
+        <item>@string/help_voice_to7</item>
+    </string-array>
+
+    <string-array name="help_voice_service">
+        <item>@string/help_voice_service1</item>
+        <item>@string/help_voice_service2</item>
+        <item>@string/help_voice_service3</item>
+        <item>@string/help_voice_service4</item>
+        <item>@string/help_voice_service5</item>
+    </string-array>
+
+    <string name="help_voice_tel1">给爸爸打电话</string>
+    <string name="help_voice_tel2">拨打10086</string>
+    <string name="help_voice_tel3">跟王五联系</string>
+    <string name="help_voice_message1">发短信给妈妈说我快到家了</string>
+    <string name="help_voice_message2">给小明发短信</string>
+    <string name="help_voice_app2">启动微信</string>
+    <string name="help_voice_app1">打开微信</string>
+    <string name="help_voice_to1">问果商城</string>
+    <string name="help_voice_to2">中国银行</string>
+    <string name="help_voice_to3">新浪新闻</string>
+    <string name="help_voice_to4">人民日报</string>
+    <string name="help_voice_to5">中山大学</string>
+    <string name="help_voice_to6">广州市社保局</string>
+    <string name="help_voice_to7">中央电视台</string>
+    <string name="help_voice_service">周围服务</string>
+    <string name="help_voice_service1">我饿了</string>
+    <string name="help_voice_service2">银行在哪里</string>
+    <string name="help_voice_service3">附近哪里有加油的地方</string>
+    <string name="help_voice_service4">我想找电影院</string>
+    <string name="help_voice_service5">我要买衣服</string>
+    <string name="help_voice_tel">打电话</string>
+    <string name="help_voice_message">发短信</string>
+    <string name="help_voice_app">找应用</string>
+    <string name="help_voice_to">语音直达</string>
+
+    <integer name="google_play_services_version">8487000</integer>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/top_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/top_back_marginLeft"
+        android:src="@drawable/left_back_btn"/>
+    <TextView
+        android:id="@+id/layout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="@dimen/layout_title_size"
+        android:textColor="@color/title_text_color" />
+    <ImageView
+        android:id="@+id/my_shopping_cart"
+        android:layout_width="@dimen/my_shopping_cart_w"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/top_back_marginLeft"
+        android:src="@mipmap/ic_launcher"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_parting_line"
+        android:background="@color/white1"
+        android:layout_gravity="bottom"/>
+
+</FrameLayout>

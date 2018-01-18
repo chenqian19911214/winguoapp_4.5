@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/confirm_pay_margin_top"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/confirm_pay_padding_Top"
+        android:paddingLeft="@dimen/confirm_pay_padding_lift"
+        android:paddingRight="@dimen/confirm_pay_padding_lift"
+        android:paddingTop="@dimen/confirm_pay_padding_Top">
+
+        <TextView
+            android:id="@+id/tv_confirm_pay_price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm_pay_price_title_text"
+            android:textColor="@color/pay_text_color"
+            android:textSize="@dimen/confirm_pay_price_size" />
+
+        <TextView
+            android:id="@+id/tv_confirm_pay_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/confirm_pay_price_margin"
+            android:layout_toRightOf="@id/tv_confirm_pay_price_text"
+            android:text=""
+            android:textColor="@color/coonfirm_pay_price"
+            android:textSize="@dimen/confirm_pay_price_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/confirm_pay_margin_top"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/confirm_pay_padding_lift"
+        android:paddingRight="@dimen/confirm_pay_padding_lift">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/confirm_pay_padding_Top"
+            android:paddingTop="@dimen/confirm_pay_padding_Top"
+            android:text="@string/confirm_pay_method_text"
+            android:textColor="@color/confirm_pay_method_color"
+            android:textSize="@dimen/confirm_pay_price_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/confirm_pay_method_line_hight"
+            android:background="@drawable/hidden_line" />
+        <!--余额支付-->
+        <RelativeLayout
+            android:id="@+id/rl_balance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/confirm_pay_padding_Top"
+            android:paddingLeft="@dimen/confirm_pay_padding_lift"
+            android:paddingRight="@dimen/confirm_pay_padding_lift"
+            android:paddingTop="@dimen/confirm_pay_padding_Top">
+
+            <TextView
+                android:id="@+id/tv_balance_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/confirm_pay_method_margin"
+                android:text="@string/balance_pay_text"
+                android:textColor="@color/pay_text_color"
+                android:textSize="@dimen/confirm_pay_price_size" />
+
+            <TextView
+                android:id="@+id/tv_balance_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_balance_tip"
+                android:layout_marginLeft="@dimen/confirm_pay_method_margin"
+                android:text=""
+                android:textColor="@color/pay_text_color"
+                android:textSize="@dimen/confirm_pay_price_size" />
+
+            <ImageView
+                android:layout_width="@dimen/jump_next_image_view_width"
+                android:layout_height="@dimen/jump_next_image_view_width"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jump_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/confirm_pay_method_line_hight"
+            android:background="@drawable/hidden_line" />
+        <!--微信支付-->
+        <RelativeLayout
+            android:id="@+id/rl_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/confirm_pay_padding_Top"
+            android:paddingLeft="@dimen/confirm_pay_padding_lift"
+            android:paddingRight="@dimen/confirm_pay_padding_lift"
+            android:paddingTop="@dimen/confirm_pay_padding_Top">
+
+            <ImageView
+                android:id="@+id/iv_weixin"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ssdk_oks_classic_wechat" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/confirm_pay_method_margin"
+                android:layout_toRightOf="@id/iv_weixin"
+                android:text="@string/weixin_pay_text"
+                android:textColor="@color/pay_text_color"
+                android:textSize="@dimen/confirm_pay_price_size" />
+
+            <ImageView
+                android:layout_width="@dimen/jump_next_image_view_width"
+                android:layout_height="@dimen/jump_next_image_view_width"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jump_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/confirm_pay_method_line_hight"
+            android:background="@drawable/hidden_line" />
+       <!--支付宝支付-->
+        <RelativeLayout
+            android:id="@+id/rl_alipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/confirm_pay_padding_Top"
+            android:paddingLeft="@dimen/confirm_pay_padding_lift"
+            android:paddingRight="@dimen/confirm_pay_padding_lift"
+            android:paddingTop="@dimen/confirm_pay_padding_Top">
+
+            <ImageView
+                android:id="@+id/iv_alipay"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/alipay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/confirm_pay_method_margin"
+                android:layout_toRightOf="@id/iv_alipay"
+                android:text="@string/ali_pay_text"
+                android:textColor="@color/pay_text_color"
+                android:textSize="@dimen/confirm_pay_price_size" />
+
+            <ImageView
+                android:layout_width="@dimen/jump_next_image_view_width"
+                android:layout_height="@dimen/jump_next_image_view_width"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jump_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/confirm_pay_method_line_hight"
+            android:background="@drawable/hidden_line" />
+
+        <RelativeLayout
+            android:id="@+id/rl_unionpay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/confirm_pay_padding_Top"
+            android:paddingLeft="@dimen/confirm_pay_padding_lift"
+            android:paddingRight="@dimen/confirm_pay_padding_lift"
+            android:paddingTop="@dimen/confirm_pay_padding_Top"
+            android:visibility="gone"
+            android:clickable="false">
+
+            <ImageView
+                android:id="@+id/iv_unionpay"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:src="@drawable/unionpay" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/confirm_pay_method_margin"
+                android:layout_toRightOf="@id/iv_unionpay"
+                android:text="@string/iv_union_pay_text"
+                android:textColor="@color/pay_text_color"
+                android:textSize="@dimen/confirm_pay_price_size" />
+
+            <ImageView
+                android:layout_width="@dimen/jump_next_image_view_width"
+                android:layout_height="@dimen/jump_next_image_view_width"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jump_next" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

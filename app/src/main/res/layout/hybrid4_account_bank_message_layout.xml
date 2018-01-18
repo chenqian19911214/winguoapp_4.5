@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffe0e0e0"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/hybrid4_settings_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        layout="@layout/hybrid4_account_head_layout" />
+
+    <Button
+        android:id="@+id/hybrid4_account_bank_card_add"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/hybrid4_account_button_drawable"
+        android:text="@string/hybrid4_account_add_bank_card"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hybrid4_settings_title"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:id="@+id/hybrid4_account_bank_card_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center_horizontal"
+            android:cacheColorHint="#00000000"
+            android:background="@drawable/hybrid4_settings_item_bg"
+            android:divider="@drawable/hybrid4_settings_item_division"
+            android:listSelector="#00000000" />
+
+        <RelativeLayout
+            android:id="@+id/hybrid4_account_bankcard_update_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/hybrid4_account_bankcard_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="15sp"
+                android:text="@string/hybrid4_account_bankcard_readerr"/>
+
+            <Button
+                android:id="@+id/hybrid4_account_bankcard_update"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/hybrid4_account_bankcard_msg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/hybrid4_account_button_drawable"
+                android:text="@string/hybrid4_account_bankcard_update" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

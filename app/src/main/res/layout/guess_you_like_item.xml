@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/wh">
+
+    <ImageView
+        android:id="@+id/guess_like_good_uri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/guess_like_good_uri_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/t_goods_name_m"
+        android:layout_marginTop="@dimen/guess_like_good_uri_name_mt"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/guess_like_item_tv_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/t_goods_m_sku_price_ml"
+                android:text="@string/today_shop_price_RMB"
+                android:textColor="#fa0000"
+                android:textSize="@dimen/guess_like_item_tv_size" />
+
+            <TextView
+                android:id="@+id/guess_like_good_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/t_goods_m_sku_price_ml"
+                android:text="0.0"
+                android:textColor="#fa0000"
+                android:textSize="@dimen/guess_like_item_tv_size" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/guess_like_good_pay_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/t_goods_m_category_name_m"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="0人付款"
+            android:textColor="#6a6a6a"
+            android:textSize="@dimen/guess_like_item_tv_size"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

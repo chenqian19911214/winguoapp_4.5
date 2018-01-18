@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="@color/wh"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/today_shop_item_m"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/home_classify2_item_img"
+            android:layout_width="150dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/home_classify2_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/t_goods_name_m"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="@dimen/guess_like_good_uri_name_mt"
+            android:textSize="@dimen/guess_like_item_tv_size"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp">
+            <TextView
+                android:id="@+id/guess_like_good_pay_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/t_goods_m_category_name_m"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="满减"
+                android:textColor="@color/red"
+                android:textSize="@dimen/guess_like_item_tv_size"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/t_goods_m_sku_price_ml"
+                    android:text="@string/today_shop_price_RMB"
+                    android:textColor="#fa0000"
+                    android:textSize="@dimen/guess_like_item_tv_size" />
+
+                <TextView
+                    android:id="@+id/home_classify2_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/t_goods_m_sku_price_ml"
+                    android:text="0.0"
+                    android:textColor="#fa0000"
+                    android:textSize="@dimen/guess_like_item_tv_size"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

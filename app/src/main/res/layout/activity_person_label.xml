@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/today_recommend_top_navi" />
+
+    <ScrollView
+        android:id="@+id/person_label_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/person_label_def_location_fl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/person_label_def_location"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/person_label_def_tip_ml"
+                    android:text="@string/person_label_def_tip"
+                    android:textSize="@dimen/person_label_def_tip_size" />
+
+                <TextView
+                    android:id="@+id/person_label_def_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="@dimen/person_label_def_tip_ml"
+                    android:text="@string/person_label_def_city"
+                    android:textSize="@dimen/person_label_def_tip_size" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_parting_line"
+                android:layout_gravity="bottom"
+                android:background="@color/white1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_parting_line"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:background="@color/white1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/person_label_def_tip_ml"
+                    android:text="@string/person_my_label_tip"
+                    android:textSize="@dimen/person_label_def_tip_size" />
+
+                <com.winguo.flowlayout.TagFlowLayout
+                    android:id="@+id/person_my_label_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/person_label_def_tip_ml"
+                    android:layout_marginRight="@dimen/person_label_def_tip_ml">
+
+                </com.winguo.flowlayout.TagFlowLayout>
+
+                <TextView
+                    android:id="@+id/person_chioce_label_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/person_chioce_label_refresh_mr"
+                    android:text="@string/person_chioce_label_refresh"
+                    android:textSize="@dimen/person_label_def_tip_size" />
+
+                <com.winguo.flowlayout.TagFlowLayout
+                    android:id="@+id/person_chioce_label_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/person_label_def_tip_ml"
+                    android:layout_marginRight="@dimen/person_label_def_tip_ml">
+
+                </com.winguo.flowlayout.TagFlowLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_parting_line"
+                android:layout_gravity="bottom"
+                android:background="@color/white1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_parting_line"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="20dp"
+                android:background="@color/white1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/person_label_def_tip_ml"
+                    android:text="@string/person_recomm_label_num"
+                    android:textSize="@dimen/person_label_def_tip_size" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/person_label_size_ll_p"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/person_label_size_ll_p">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/person_label_def_tip_ml"
+                        android:background="@drawable/label_bt_bg"
+                        android:padding="@dimen/person_label_size_p"
+                        android:text="10个"
+                        android:textSize="@dimen/person_label_def_tip_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/person_label_def_tip_ml"
+                        android:background="@drawable/label_bt_bg"
+                        android:padding="@dimen/person_label_size_p"
+                        android:text="20个"
+                        android:textSize="@dimen/person_label_def_tip_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/person_label_def_tip_ml"
+                        android:background="@drawable/label_bt_bg"
+                        android:padding="@dimen/person_label_size_p"
+                        android:text="30个"
+                        android:textSize="@dimen/person_label_def_tip_size" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_parting_line"
+                android:layout_gravity="bottom"
+                android:background="@color/white1" />
+
+            <Button
+                android:id="@+id/person_label_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/person_label_modify" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

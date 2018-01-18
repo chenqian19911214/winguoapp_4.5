@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/voicefun_big_bg"
+    >
+    
+    <RelativeLayout android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/voicefun_title_bg" >
+
+        <RelativeLayout
+            android:id="@+id/voicefun_layout_title_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/voicefun_title_back_selete" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/voicefun_layout_title_back"
+            android:text="@string/voicefun_call_title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+    
+    <TextView android:id="@+id/voicefun_rawinput_content"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#4e555a"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:layout_marginTop="5dp"
+    	android:background="@drawable/voicefun_raw_bg_shape"
+        />
+    
+	    
+	    <TextView android:id="@+id/voicefun_call_prompt"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="要拨号的联系人"
+	        android:layout_marginLeft="20dp"
+    		android:layout_marginRight="20dp"
+    		android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+	        android:textColor="#4e555a"
+        	android:textSize="16sp"
+    		android:layout_alignParentLeft="true"
+    		android:layout_centerVertical="true"
+	        />
+		
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_marginBottom="17dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_weight="1"
+	        >
+	        <ListView
+		        android:id="@+id/voicefun_send_msg_listview"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/voicefun_input_bg"
+		        android:cacheColorHint="@android:color/transparent"
+		        android:divider="#afafaf"
+		        android:dividerHeight="1dp"
+		        android:scrollbarThumbVertical="@drawable/voicefun_scrollbar_thumb"
+		        android:scrollbarTrackVertical="@drawable/voicefun_scrollbar_track" 
+		        />
+	    </LinearLayout>
+    
+	    <Button 
+		    android:id="@+id/voicefun_call_go_dial"
+		    android:layout_width="match_parent"
+		    android:layout_height="50dp"
+		    android:text="@string/voicefun_text_go_dial"
+		    android:background="@drawable/voicefun_send_button_drawable"
+		    android:textColor="@android:color/white"
+	        android:textSize="17sp"
+		    android:layout_marginLeft="20dp"
+	    	android:layout_marginRight="20dp"
+	    	android:layout_marginBottom="20dp"
+	    	android:layout_gravity="bottom|center_horizontal"
+	    	android:visibility="gone"
+		    />
+</LinearLayout>

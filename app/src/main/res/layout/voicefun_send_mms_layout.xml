@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/voicefun_big_bg"
+    android:weightSum="1">
+    
+    <RelativeLayout android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/voicefun_title_bg" >
+
+        <RelativeLayout
+            android:id="@+id/voicefun_layout_title_back"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:clickable="true" >
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/voicefun_title_back_selete" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/voicefun_layout_title_back"
+            android:text="@string/voicefun_sendmsg_title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" >
+        </TextView>
+    </RelativeLayout>
+    
+    <TextView android:id="@+id/voicefun_rawinput_content"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textColor="#4e555a"
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+    	android:layout_marginRight="20dp"
+    	android:layout_marginTop="5dp"
+    	android:background="@drawable/voicefun_raw_bg_shape"
+        />
+    
+	    <TextView 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="短信内容"
+	        
+	        android:textColor="#4e555a"
+        	android:textSize="16sp"
+        	
+        	android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            
+            android:layout_marginLeft="20dp"
+    		android:layout_marginRight="20dp"
+	        />
+	    
+	    <ScrollView 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.35"
+	        
+	        android:layout_marginLeft="20dp"
+    		android:layout_marginRight="20dp"
+    		
+    		android:scrollbarTrackVertical="@drawable/voicefun_scrollbar_track"
+        	android:scrollbarThumbVertical="@drawable/voicefun_scrollbar_thumb"
+	        >
+	        <EditText android:id="@+id/voicefun_msg_content"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:textColor="@android:color/black"
+		        android:padding="8dp"
+		        android:background="@drawable/voicefun_input_bg"
+		        />
+	    </ScrollView>
+	
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="20dp"
+    		android:layout_marginRight="20dp"
+    		android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+	        >
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="接收人"
+	        
+	        android:textColor="#4e555a"
+        	android:textSize="16sp"
+    		
+    		android:layout_alignParentLeft="true"
+    		android:layout_centerVertical="true"
+	        />
+	    
+	    <LinearLayout android:id="@+id/voicefun_add_contact_layout"
+	        android:layout_width="wrap_content"
+	        android:layout_height="25dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_alignParentRight="true"
+    		android:layout_centerVertical="true"
+    		android:gravity="center_vertical"
+	        >
+         <ImageView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/voicefun_btn_add_drawable"
+             />
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="添加"
+	        android:textColor="#4e555a"
+        	android:textSize="16sp"
+	        />
+	    </LinearLayout>
+		</RelativeLayout>
+		
+	    <LinearLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_marginBottom="17dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_weight="0.65"
+	        >
+
+			<ListView
+                android:id="@+id/voicefun_send_msg_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/voicefun_input_bg"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#afafaf"
+                android:dividerHeight="1dp"
+                android:scrollbarThumbVertical="@drawable/voicefun_scrollbar_thumb"
+                android:scrollbarTrackVertical="@drawable/voicefun_scrollbar_track"
+                />
+		</LinearLayout>
+
+	<Button
+        android:id="@+id/voicefun_msg_send_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/voicefun_text_send"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/voicefun_send_button_drawable"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

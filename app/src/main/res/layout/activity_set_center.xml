@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white"
+    android:clipToPadding="true">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/setting_center_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white1"
+        android:scrollbars="none">
+
+    </android.support.v7.widget.RecyclerView>
+    <!--退出登录按钮-->
+    <LinearLayout
+        android:id="@+id/ll_quit_login"
+        android:layout_width="@dimen/ll_quit_login_w"
+        android:layout_height="@dimen/ll_quit_login_h"
+        android:layout_alignParentBottom="true"
+        android:background="@color/title_color"
+        android:layout_marginBottom="@dimen/main_left_menu_quit_pl"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/quit_login"
+            android:textColor="@color/title_tt_color"
+            android:textSize="@dimen/quit_login_ts" />
+    </LinearLayout>
+    <!--<include layout="@layout/top_back_navi"/>-->
+    <!--<FrameLayout
+        android:id="@+id/fl_account_safe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/setting_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/account_and_safe"
+            android:textColor="@color/user_wallet_text_color"
+            android:textSize="@dimen/person_item_textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:src="@drawable/classify_arrows_right" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_help_center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_split_line_h"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/setting_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/help_center"
+            android:textColor="@color/user_wallet_text_color"
+            android:textSize="@dimen/person_item_textsize"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:src="@drawable/classify_arrows_right" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_split_line_h"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/setting_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/user_wallet_text_color"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/update"
+            android:textSize="@dimen/person_item_textsize"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:src="@drawable/classify_arrows_right" />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_split_line_h"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/setting_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/user_wallet_text_color"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/feedback"
+            android:textSize="@dimen/person_item_textsize"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:src="@drawable/classify_arrows_right" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_my_about_we"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/comm_split_line_h"
+        android:background="@color/wh"
+        android:orientation="horizontal"
+        android:padding="@dimen/setting_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/user_wallet_text_color"
+            android:layout_margin="@dimen/user_nickname_fl_ml"
+            android:text="@string/my_about_we"
+            android:textSize="@dimen/person_item_textsize"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/user_nickname_fl_mr"
+            android:src="@drawable/classify_arrows_right" />
+
+    </FrameLayout>-->
+
+</RelativeLayout>

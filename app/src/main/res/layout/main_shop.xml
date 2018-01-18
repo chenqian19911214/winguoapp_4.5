@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/shop_web_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopCenter_top_navi_pb"
+        android:layout_gravity="bottom"
+        android:background="@null"
+        android:focusableInTouchMode="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/shop_web_progressbar" />
+
+    <FrameLayout
+        android:id="@+id/main_shop_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+       <!-- 动态添加
+        <WebView
+            android:id="@+id/shop_webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"/>-->
+
+        <!-- <include
+             android:id="@+id/no_network"
+             layout="@layout/no_network_layout"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:visibility="visible"/>-->
+
+    </FrameLayout>
+
+
+    <include
+        layout="@layout/shop_top_back_navi"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/shopCenter_top_navi_h"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="weather_widget_text_size_2x2">8sp</dimen>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shop_more_pop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/shop_more_pop_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shop_pop_bg"
+        android:layout_marginRight="20dp"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/shop_more_shared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/winguo_shared_icon" />
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/main_shared" />
+        </LinearLayout>
+
+        <ImageView style="@style/horizontal_divider" />
+
+        <LinearLayout
+            android:id="@+id/shop_more_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/wiguo_shop_more_refresh"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/winguo_home_news_refresh"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/shop_more_menu_refresh" />
+        </LinearLayout>
+
+        <ImageView style="@style/horizontal_divider" />
+
+        <LinearLayout
+            android:id="@+id/shop_user_feedBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/winguo_feedback_icon" />
+
+            <TextView
+                style="@style/TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/main_comm_win" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

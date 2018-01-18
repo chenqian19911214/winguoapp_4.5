@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/modify_bind_phone_second_tip_pt"
+        android:paddingBottom="@dimen/modify_bind_phone_second_tip_pt"
+        android:text="为了您的账户安全，请验证现在的手机号" />
+
+    <TextView
+        android:id="@+id/modify_bind_phone_first_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/bind_phone_tip_pt"
+        android:paddingBottom="@dimen/bind_phone_tip_pt"
+        android:text="@string/modify_bind_phone_first_now" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/login_pw_ll_ml"
+        android:layout_marginRight="@dimen/login_pw_ll_ml">
+
+        <EditText
+            android:id="@+id/modify_bind_phone_first_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="center"
+            android:hint="输入验证码"
+            android:padding="20dp"
+            android:maxLines="8"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:theme="@style/MyEditText" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/modify_bind_phone_first_code"
+            android:background="@color/white1" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/modify_bind_phone_first_gain_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="@dimen/modify_bind_phone_first_tip_pt"
+        android:paddingBottom="@dimen/modify_bind_phone_first_tip_pt"
+        android:text="获取验证码"
+        android:textColor="@color/tomato" />
+    <Button
+        android:id="@+id/modify_bind_phone_first_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/winguo_account_modify_pay_bt_h"
+        android:layout_marginLeft="@dimen/login_pw_ll_ml"
+        android:layout_marginRight="@dimen/login_pw_ll_ml"
+        android:background="@drawable/pay_success_blue_solid_btn"
+        android:text="验 证"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/modify_bind_phone_first_no_longer_make"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:paddingRight="@dimen/bind_phone_tip_pt"
+        android:paddingTop="@dimen/bind_phone_tip_pt"
+        android:paddingBottom="@dimen/bind_phone_tip_pt"
+        android:text="手机号不再使用？"
+        android:visibility="gone"/>
+
+</LinearLayout>

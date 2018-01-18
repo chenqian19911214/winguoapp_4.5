@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/wh">
+    <TextView
+        android:id="@+id/cash_detail_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content"
+        android:textColor="@color/cash_detail_title_color"
+        android:textSize="@dimen/cash_detail_title_ts"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="14dp"
+        />
+    <TextView
+        android:id="@+id/cash_detail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        android:textSize="@dimen/cash_detail_time_ts"
+        android:textColor="@color/cash_detail_time_color"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/cash_detail_title"/>
+    <TextView
+        android:id="@+id/cash_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:layout_marginRight="11dp"
+        android:textColor="@color/cash_detail_color"
+        android:textSize="@dimen/cash_detail_ts"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/darkgray"
+        android:layout_marginTop="9dp"
+        android:layout_below="@id/cash_detail_time" />
+
+</RelativeLayout>
